@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1378" height="361" viewBox="0 0 1378 361" fill="none">
+<rect x="387.856" y="72.1165" width="47.2433" height="188.648" fill="#EEFFBC" />
+<rect x="505.892" y="72.1165" width="23.5725" height="149.455" fill="#EEFFBC" />
+<rect x="647.515" y="72.1165" width="23.5725" height="149.455" fill="#EEFFBC" />
+<rect x="765.597" y="72.1165" width="23.5725" height="149.455" fill="#EEFFBC" />
+<rect x="914.925" y="72.1165" width="23.5725" height="149.455" fill="#EEFFBC" />
+<rect x="1017.15" y="72.1165" width="23.5725" height="149.455" fill="#EEFFBC" />
+<rect x="1111.67" y="72.1165" width="23.5725" height="149.455" fill="#EEFFBC" />
+<defs>
+<clipPath id="clip0_5135_6165">
+<rect width="251.793" height="189.156" fill="white" transform="translate(88.9434 71.7483)" />
+</clipPath>
+<clipPath id="clip1_5135_6165">
+<rect width="251.793" height="189.156" fill="white" transform="translate(340.633 71.7483)" />
+</clipPath>
+<clipPath id="clip2_5135_6165">
+<rect width="251.793" height="189.156" fill="white" transform="translate(592.39 71.7483)" />
+</clipPath>
+<clipPath id="clip3_5135_6165">
+<rect width="251.793" height="189.156" fill="white" transform="translate(844.079 71.7483)" />
+</clipPath>
+<clipPath id="clip4_5135_6165">
+<rect width="251.793" height="189.156" fill="white" transform="translate(1095.76 71.7483)" />
+</clipPath>
+</defs>
+</svg>

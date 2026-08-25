@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1144" height="773" viewBox="0 0 1144 773" fill="none">
+<line x1="386.507" y1="393.124" x2="386.507" y2="53.3795" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="119.746" y1="688.044" x2="119.746" y2="480.129" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="1014.26" y1="688.044" x2="1014.26" y2="478.769" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="748.385" y1="393.124" x2="748.385" y2="53.3795" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="1107.03" y1="478.228" x2="49.1808" y2="478.228" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="1033.16" y1="595.308" x2="48.3932" y2="595.308" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="1105.13" y1="393.443" x2="98.7828" y2="393.443" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<defs>
+<clipPath id="clip0_5135_11069">
+<rect width="117.095" height="117.11" fill="white" transform="translate(897.525 478.258)" />
+</clipPath>
+<clipPath id="clip1_5135_11069">
+<rect width="117.098" height="117.113" fill="white" transform="translate(897.524 478.195)" />
+</clipPath>
+</defs>
+</svg>

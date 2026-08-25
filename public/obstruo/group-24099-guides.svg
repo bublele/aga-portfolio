@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1368" height="517" viewBox="0 0 1368 517" fill="none">
+<line x1="71.1748" y1="55" x2="71.1748" y2="516" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="211.175" y1="55" x2="211.175" y2="516" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="281" y1="56" x2="281" y2="505" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="1191" y1="56" x2="1191" y2="513" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="1300.5" y1="236.5" x2="69.5" y2="236.5" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<line x1="1301.5" y1="376.5" x2="69.5" y2="376.5" stroke="#818285" stroke-width="2" stroke-dasharray="6 6" />
+<defs>
+<clipPath id="clip0_5274_24123">
+<rect width="1121.9" height="140" fill="white" transform="translate(70.5 236)" />
+</clipPath>
+</defs>
+</svg>
