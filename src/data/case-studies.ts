@@ -4,8 +4,8 @@ import type { CaseStudy } from "@/types/case-study";
 
 export const caseStudies: readonly CaseStudy[] = [
   {
-    slug: "clouds",
-    title: "Clouds",
+    slug: "cloud9",
+    title: "Cloud 9",
     seoTitle: "Cloud 9 — identyfikacja wizualna studia muzycznego",
     displayTitle: "CLOUD 9",
     category: "Brand identity",
@@ -19,15 +19,15 @@ export const caseStudies: readonly CaseStudy[] = [
     year: "2025",
     services: ["Projekt logo", "Materiały brandingowe"],
     cover: {
-      src: media.cloudsCover,
+      src: media.cloud9Cover,
       alt: "Znak Cloud 9 wyświetlony na ekranie retro telewizora",
     },
     hero: {
-      src: caseStudyHeroes.clouds,
+      src: caseStudyHeroes.cloud9,
       alt: "Świetlny znak Cloud 9 na ciemnym tle",
     },
-    gallery: caseStudyGalleries.clouds,
-    theme: "clouds",
+    gallery: caseStudyGalleries.cloud9,
+    theme: "cloud9",
     accent: "#ff563f",
     monogram: "S",
   },

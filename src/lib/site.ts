@@ -1,5 +1,23 @@
 const vercelProductionUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
+export const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/agnieszka-zobel-8b448a210/",
+    icon: "linkedin",
+    label: "LinkedIn",
+  },
+  {
+    href: "https://www.facebook.com/zobelaga/",
+    icon: "facebook",
+    label: "Facebook",
+  },
+  {
+    href: "https://www.instagram.com/zobo_graphic/",
+    icon: "instagram",
+    label: "Instagram",
+  },
+] as const;
+
 export const siteConfig = {
   name: "ZOBO — Portfolio Agnieszki Zobel",
   shortName: "ZOBO",

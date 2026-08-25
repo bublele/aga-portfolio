@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 import { BelloroLogoConstruction } from "@/components/belloro-logo-construction";
-import { CloudsLogoConstruction } from "@/components/clouds-logo-construction";
+import { Cloud9LogoConstruction } from "@/components/cloud9-logo-construction";
 import { Formel7LogoConstruction } from "@/components/formel7-logo-construction";
 import { ObstruoLogoConstruction } from "@/components/obstruo-logo-construction";
 import type { PortfolioGalleryItem } from "@/types/case-study";
 
 type PortfolioGalleryProps = {
-  interactiveLogoConstruction?: "belloro" | "clouds" | "formel7" | "obstruo";
+  interactiveLogoConstruction?: "belloro" | "cloud9" | "formel7" | "obstruo";
   items: readonly PortfolioGalleryItem[];
   label: string;
 };
@@ -24,8 +24,8 @@ export function PortfolioGallery({
           className={`portfolio-gallery__item portfolio-gallery__item--${item.layout ?? "half"}`}
           key={`${item.src.src}-${index}`}
         >
-          {interactiveLogoConstruction === "clouds" && index === 0 ? (
-            <CloudsLogoConstruction />
+          {interactiveLogoConstruction === "cloud9" && index === 0 ? (
+            <Cloud9LogoConstruction />
           ) : interactiveLogoConstruction === "belloro" && index === 0 ? (
             <BelloroLogoConstruction />
           ) : interactiveLogoConstruction === "obstruo" && index === 0 ? (

@@ -62,7 +62,7 @@ export function CaseStudyDetail({ caseStudy }: CaseStudyDetailProps) {
       <PortfolioGallery
         interactiveLogoConstruction={
           caseStudy.slug === "belloro" ||
-          caseStudy.slug === "clouds" ||
+          caseStudy.slug === "cloud9" ||
           caseStudy.slug === "formel7" ||
           caseStudy.slug === "obstruo"
             ? caseStudy.slug

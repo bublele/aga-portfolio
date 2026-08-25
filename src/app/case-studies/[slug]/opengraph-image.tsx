@@ -6,7 +6,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 const themeColors = {
-  clouds: { background: "#dedede", foreground: "#101010", accent: "#ff563f" },
+  cloud9: { background: "#dedede", foreground: "#101010", accent: "#ff563f" },
   belloro: { background: "#dedad5", foreground: "#211d1a", accent: "#9d8778" },
   obstruo: { background: "#0a0710", foreground: "#f3f0f5", accent: "#8e5cff" },
   formel: { background: "#121518", foreground: "#f4f4f4", accent: "#2caeff" },
@@ -19,7 +19,7 @@ export default async function CaseStudyOpenGraphImage({
 }) {
   const { slug } = await params;
   const caseStudy = getCaseStudy(slug);
-  const colors = caseStudy ? themeColors[caseStudy.theme] : themeColors.clouds;
+  const colors = caseStudy ? themeColors[caseStudy.theme] : themeColors.cloud9;
 
   return new ImageResponse(
     (

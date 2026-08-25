@@ -2,14 +2,14 @@ import belloroJewelry1 from "@/assets/images/belloro-jewelry-1.webp";
 import belloroJewelry2 from "@/assets/images/belloro-jewelry-2.webp";
 import belloroJewelry3 from "@/assets/images/belloro-jewelry-3.webp";
 import formelCover from "@/assets/images/formel-cover.webp";
-import cloudsHero from "@/assets/project-sections/clouds/01-hero-logo.webp";
-import cloudsLogoSystem from "@/assets/project-sections/clouds/02-logo-system.webp";
-import cloudsStage from "@/assets/project-sections/clouds/03-stage-signage.webp";
-import cloudsMerch from "@/assets/project-sections/clouds/04-merch-and-bottles.webp";
-import cloudsScreen from "@/assets/project-sections/clouds/05-retro-screen.webp";
-import cloudsGlass from "@/assets/project-sections/clouds/06-glass-panels.webp";
-import cloudsBusStop from "@/assets/project-sections/clouds/07-bus-stop.webp";
-import cloudsApplications from "@/assets/project-sections/clouds/08-brand-applications.webp";
+import cloud9Hero from "@/assets/project-sections/cloud9/01-hero-logo.webp";
+import cloud9LogoSystem from "@/assets/project-sections/cloud9/02-logo-system.webp";
+import cloud9Stage from "@/assets/project-sections/cloud9/03-stage-signage.webp";
+import cloud9Merch from "@/assets/project-sections/cloud9/04-merch-and-bottles.webp";
+import cloud9Screen from "@/assets/project-sections/cloud9/05-retro-screen.webp";
+import cloud9Glass from "@/assets/project-sections/cloud9/06-glass-panels.webp";
+import cloud9BusStop from "@/assets/project-sections/cloud9/07-bus-stop.webp";
+import cloud9Applications from "@/assets/project-sections/cloud9/08-brand-applications.webp";
 import belloroLogoSystem from "@/assets/project-sections/belloro/belloro-logo-construction.webp";
 import belloroPalette from "@/assets/project-sections/belloro/belloro-logo-palette.webp";
 import belloroStationery from "@/assets/project-sections/belloro/belloro-stationery-scene.webp";
@@ -62,20 +62,20 @@ const half = (src: PortfolioImage["src"], alt: string): PortfolioGalleryItem => 
 });
 
 export const caseStudyHeroes = {
-  clouds: cloudsHero,
+  cloud9: cloud9Hero,
   formel7: formelHero,
   obstruo: obstruoHero,
 } as const;
 
 export const caseStudyGalleries = {
-  clouds: [
-    full(cloudsLogoSystem, "Konstrukcja i proporcje znaku Cloud 9"),
-    full(cloudsStage, "Identyfikacja Cloud 9 na ekranie sceny"),
-    full(cloudsMerch, "Odzież i bidony z identyfikacją Cloud 9"),
-    full(cloudsScreen, "Znak Cloud 9 na ekranie retro telewizora"),
-    full(cloudsGlass, "System znaku Cloud 9 na szklanych panelach"),
-    full(cloudsBusStop, "Reklama Cloud 9 w przestrzeni miejskiej"),
-    full(cloudsApplications, "Warianty znaku i zastosowania Cloud 9"),
+  cloud9: [
+    full(cloud9LogoSystem, "Konstrukcja i proporcje znaku Cloud 9"),
+    full(cloud9Stage, "Identyfikacja Cloud 9 na ekranie sceny"),
+    full(cloud9Merch, "Odzież i bidony z identyfikacją Cloud 9"),
+    full(cloud9Screen, "Znak Cloud 9 na ekranie retro telewizora"),
+    full(cloud9Glass, "System znaku Cloud 9 na szklanych panelach"),
+    full(cloud9BusStop, "Reklama Cloud 9 w przestrzeni miejskiej"),
+    full(cloud9Applications, "Warianty znaku i zastosowania Cloud 9"),
   ],
   belloro: [
     full(belloroLogoSystem, "Konstrukcja monogramu i logotypu Belloro"),

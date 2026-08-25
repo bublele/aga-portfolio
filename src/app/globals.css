@@ -193,6 +193,40 @@ img { display: block; max-width: 100%; }
   line-height: 1.45;
 }
 
+.expertise-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+  padding: 0;
+  margin: 2rem 0 0;
+  list-style: none;
+}
+
+.expertise-highlight {
+  display: grid;
+  grid-template-columns: 2.625rem minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+  min-width: 0;
+}
+
+.expertise-highlight__icon {
+  display: grid;
+  width: 2.625rem;
+  height: 2.625rem;
+  place-items: center;
+  border: 1px solid rgb(9 9 9 / 16%);
+  border-radius: 50%;
+  background: rgb(244 244 244 / 52%);
+  color: #090909;
+}
+
+.expertise-highlight__label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
 .home-hero__portrait {
   position: relative;
   width: 100%;
@@ -207,23 +241,37 @@ img { display: block; max-width: 100%; }
 
 .social-marks {
   display: flex;
-  gap: 1.2rem;
+  gap: 1.5rem;
   align-items: center;
   margin-block: 2.6rem 3.8rem;
 }
 
 .social-mark {
   display: inline-grid;
-  width: 2.55rem;
-  height: 2.55rem;
+  width: 2.625rem;
+  height: 2.625rem;
   place-items: center;
   border-radius: 50%;
   background: #090909;
   color: #fff;
-  font-size: 1.15rem;
-  font-weight: 800;
-  line-height: 1;
+  transition: transform 180ms ease, opacity 180ms ease;
 }
+
+.social-mark:hover { transform: translateY(-2px); }
+.social-mark:active { transform: translateY(0); }
+
+.social-mark__icon {
+  width: 54%;
+  height: 54%;
+  background: currentColor;
+  -webkit-mask: var(--social-icon) center / contain no-repeat;
+  mask: var(--social-icon) center / contain no-repeat;
+}
+
+.social-mark--linkedin { --social-icon: url("/icons/social/linkedin-in.svg"); }
+.social-mark--facebook { --social-icon: url("/icons/social/facebook-f.svg"); }
+.social-mark--facebook .social-mark__icon { width: 45%; height: 58%; }
+.social-mark--instagram { --social-icon: url("/icons/social/instagram.svg"); }
 
 .social-marks--inverse { margin: 0; }
 .social-marks--inverse .social-mark { background: #f4f4f4; color: #0a0a0a; }
@@ -477,7 +525,7 @@ img { display: block; max-width: 100%; }
 .case-page--belloro { --case-bg: #dedad5; --case-ink: #211d1a; --case-accent: #9d8778; }
 .case-page--obstruo { --case-bg: #0a0710; --case-ink: #f3f0f5; --case-accent: #8e5cff; }
 .case-page--formel { --case-bg: #121518; --case-ink: #f4f4f4; --case-accent: #2caeff; }
-.case-page--clouds { --case-bg: #dedede; --case-ink: #101010; --case-accent: #ff563f; }
+.case-page--cloud9 { --case-bg: #dedede; --case-ink: #101010; --case-accent: #ff563f; }
 
 .case-back {
   position: absolute;
@@ -612,14 +660,14 @@ img { display: block; max-width: 100%; }
 
 .case-section__image img { object-fit: cover; }
 
-.case-page--clouds .case-section__image,
+.case-page--cloud9 .case-section__image,
 .case-page--obstruo .case-section__image,
 .case-page--formel .case-section__image {
   width: min(100%, 760px);
   justify-self: end;
 }
 
-.case-page--clouds .case-section__image img,
+.case-page--cloud9 .case-section__image img,
 .case-page--obstruo .case-section__image img,
 .case-page--formel .case-section__image img {
   object-fit: contain;
@@ -803,6 +851,11 @@ img { display: block; max-width: 100%; }
   .home-hero__role { margin-bottom: 1rem; font-size: clamp(1rem, 2.8vw, 1.25rem); }
   .home-hero__bio, .home-hero__lead { font-size: 0.875rem; line-height: 1.65; }
   .home-hero__lead { margin-top: 0.5rem; }
+  .expertise-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.875rem 1rem; margin-top: 1.5rem; }
+  .expertise-highlight { grid-template-columns: 2.25rem minmax(0, 1fr); gap: 0.625rem; }
+  .expertise-highlight__icon { width: 2.25rem; height: 2.25rem; }
+  .expertise-highlight__icon svg { width: 1.5rem; height: 1.5rem; }
+  .expertise-highlight__label { font-size: 0.75rem; }
 
   .home-hero__portrait {
     width: 100%;
@@ -814,7 +867,7 @@ img { display: block; max-width: 100%; }
   .home-hero__portrait img { object-position: center 18%; }
 
   .social-marks { gap: 1.5rem; margin-block: 2rem; }
-  .social-mark { width: 1.75rem; height: 1.75rem; font-size: 0.8rem; }
+  .social-mark { width: 1.75rem; height: 1.75rem; }
   .primary-button { width: 100%; min-width: 0; min-height: 3.5rem; font-size: 1.125rem; }
   .primary-button span { font-size: 1.5rem; }
   .work-index { padding-top: 3.75rem; padding-bottom: 4.25rem; }
@@ -1004,14 +1057,14 @@ img { display: block; max-width: 100%; }
   height: auto;
 }
 
-.clouds-construction {
+.cloud9-construction {
   position: relative;
   overflow: hidden;
   width: 100%;
   background: #dedede;
 }
 
-.clouds-construction__board {
+.cloud9-construction__board {
   display: flex;
   width: 100%;
   aspect-ratio: 3 / 5;
@@ -1020,23 +1073,23 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
 }
 
-.clouds-construction__diagram {
+.cloud9-construction__diagram {
   position: relative;
   margin-inline: auto;
   cursor: crosshair;
 }
 
-.clouds-construction__diagram--symbol { width: 82.35%; }
+.cloud9-construction__diagram--symbol { width: 82.35%; }
 
-.clouds-construction__diagram--horizontal {
+.cloud9-construction__diagram--horizontal {
   width: 94%;
 }
 
-.clouds-construction__diagram--stacked {
+.cloud9-construction__diagram--stacked {
   width: 89.5%;
 }
 
-.clouds-construction__layer {
+.cloud9-construction__layer {
   position: absolute;
   inset: 0;
   display: block;
@@ -1044,38 +1097,38 @@ img { display: block; max-width: 100%; }
   height: auto;
 }
 
-.clouds-construction__layer--logo {
+.cloud9-construction__layer--logo {
   position: relative;
   z-index: 2;
   transition: filter 450ms ease;
 }
 
-.clouds-construction__layer--grid {
+.cloud9-construction__layer--grid {
   z-index: 0;
   opacity: 0.14;
   transition: opacity 480ms ease;
 }
 
-.clouds-construction__layer--accents {
+.cloud9-construction__layer--accents {
   z-index: 1;
   clip-path: inset(0 58% 0 0);
   opacity: 0.2;
   transition: clip-path 700ms cubic-bezier(0.16, 1, 0.3, 1), opacity 420ms ease;
 }
 
-.clouds-construction__layer--guides {
+.cloud9-construction__layer--guides {
   z-index: 3;
   opacity: 0.22;
   transition: opacity 420ms ease;
 }
 
-.clouds-construction__layer--dimensions {
+.cloud9-construction__layer--dimensions {
   z-index: 4;
   opacity: 0.38;
   transition: opacity 420ms ease;
 }
 
-.clouds-construction__hint {
+.cloud9-construction__hint {
   position: absolute;
   right: clamp(0.75rem, 2vw, 1.5rem);
   bottom: clamp(0.75rem, 2vw, 1.5rem);
@@ -1093,43 +1146,43 @@ img { display: block; max-width: 100%; }
   transition: opacity 260ms ease, transform 260ms ease;
 }
 
-.clouds-construction__hint > span {
+.cloud9-construction__hint > span {
   width: 0.55rem;
   height: 0.55rem;
   border: 2px solid #ff9d3c;
   border-radius: 50%;
   box-shadow: 0 0 0 0 rgb(255 157 60 / 35%);
-  animation: clouds-construction-pulse 2.2s ease-out infinite;
+  animation: cloud9-construction-pulse 2.2s ease-out infinite;
 }
 
-.clouds-construction__diagram:is(:hover, :focus-visible) .clouds-construction__layer--logo {
+.cloud9-construction__diagram:is(:hover, :focus-visible) .cloud9-construction__layer--logo {
   filter: drop-shadow(0 8px 10px rgb(0 0 0 / 8%));
 }
 
-.clouds-construction__diagram:is(:hover, :focus-visible) .clouds-construction__layer--grid {
+.cloud9-construction__diagram:is(:hover, :focus-visible) .cloud9-construction__layer--grid {
   opacity: 0.42;
 }
 
-.clouds-construction__diagram:is(:hover, :focus-visible) .clouds-construction__layer--guides {
+.cloud9-construction__diagram:is(:hover, :focus-visible) .cloud9-construction__layer--guides {
   opacity: 0.72;
 }
 
-.clouds-construction__diagram:is(:hover, :focus-visible) .clouds-construction__layer--accents {
+.cloud9-construction__diagram:is(:hover, :focus-visible) .cloud9-construction__layer--accents {
   clip-path: inset(0);
   opacity: 0.38;
 }
 
-.clouds-construction__diagram:is(:hover, :focus-visible) .clouds-construction__layer--dimensions {
+.cloud9-construction__diagram:is(:hover, :focus-visible) .cloud9-construction__layer--dimensions {
   opacity: 1;
 }
 
-.clouds-construction:has(.clouds-construction__diagram:is(:hover, :focus-visible))
-  .clouds-construction__hint {
+.cloud9-construction:has(.cloud9-construction__diagram:is(:hover, :focus-visible))
+  .cloud9-construction__hint {
   opacity: 0;
   transform: translateY(0.5rem);
 }
 
-@keyframes clouds-construction-pulse {
+@keyframes cloud9-construction-pulse {
   70%, 100% { box-shadow: 0 0 0 0.65rem rgb(255 157 60 / 0%); }
 }
 
@@ -1531,17 +1584,17 @@ img { display: block; max-width: 100%; }
   .portfolio-gallery { grid-template-columns: 1fr; gap: 1rem; padding-bottom: 5rem; }
   .portfolio-gallery__item--full { grid-column: auto; }
   .belloro-construction__hint,
-  .clouds-construction__hint,
+  .cloud9-construction__hint,
   .formel-construction__hint,
   .obstruo-construction__hint { max-width: 12rem; line-height: 1.2; }
 }
 
 @media (hover: none) {
-  .clouds-construction__layer--grid { opacity: 0.32; }
-  .clouds-construction__layer--guides { opacity: 0.58; }
-  .clouds-construction__layer--accents { clip-path: inset(0); opacity: 0.34; }
-  .clouds-construction__layer--dimensions { opacity: 0.88; }
-  .clouds-construction__hint { display: none; }
+  .cloud9-construction__layer--grid { opacity: 0.32; }
+  .cloud9-construction__layer--guides { opacity: 0.58; }
+  .cloud9-construction__layer--accents { clip-path: inset(0); opacity: 0.34; }
+  .cloud9-construction__layer--dimensions { opacity: 0.88; }
+  .cloud9-construction__hint { display: none; }
   .formel-construction__layer--grid { opacity: 0.32; }
   .formel-construction__layer--guides { opacity: 0.58; }
   .formel-construction__layer--accents { clip-path: inset(0); opacity: 0.34; }
@@ -1564,7 +1617,7 @@ img { display: block; max-width: 100%; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
   .home-main__gradient-ellipse { animation: none; transform: none; }
   .belloro-construction__hint > span,
-  .clouds-construction__hint > span,
+  .cloud9-construction__hint > span,
   .formel-construction__hint > span,
   .obstruo-construction__hint > span { animation: none; }
 }

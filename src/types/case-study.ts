@@ -32,7 +32,7 @@ export type CaseStudy = {
   cover: PortfolioImage;
   gallery: readonly PortfolioGalleryItem[];
   hero?: PortfolioImage;
-  theme: "clouds" | "belloro" | "obstruo" | "formel";
+  theme: "cloud9" | "belloro" | "obstruo" | "formel";
   accent: string;
   monogram: string;
 };

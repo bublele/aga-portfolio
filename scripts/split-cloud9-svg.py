@@ -7,7 +7,7 @@ SVG_NAMESPACE = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG_NAMESPACE)
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSET_DIRECTORY = ROOT / "public" / "clouds"
+ASSET_DIRECTORY = ROOT / "public" / "cloud9"
 
 SOURCES = (
     "group-24104.svg",

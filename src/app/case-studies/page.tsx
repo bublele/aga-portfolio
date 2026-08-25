@@ -10,7 +10,7 @@ import { absoluteUrl, siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Case studies — branding i identyfikacja wizualna",
   description:
-    "Case studies projektów Clouds, Belloro, Obstruo.ai i Formel7 — branding, logo, packaging i systemy identyfikacji Agnieszki Zobel.",
+    "Case studies projektów Cloud 9, Belloro, Obstruo.ai i Formel7 — branding, logo, packaging i systemy identyfikacji Agnieszki Zobel.",
   alternates: { canonical: "/case-studies" },
   openGraph: {
     type: "website",
