@@ -11,4 +11,11 @@ export type IllustrationProject = {
   shortTitle: string;
   year: string;
   services: readonly string[];
+  collections?: readonly IllustrationCollection[];
+};
+
+export type IllustrationCollection = {
+  title?: string;
+  year?: string;
+  images: readonly PortfolioGalleryItem[];
 };

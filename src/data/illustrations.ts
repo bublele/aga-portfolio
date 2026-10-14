@@ -1,5 +1,5 @@
 import { media } from "@/data/media";
-import { illustrationGalleries } from "@/data/project-galleries";
+import { illustrationCollections, illustrationGalleries } from "@/data/project-galleries";
 import type { IllustrationProject } from "@/types/illustration";
 
 const illustrationDescription = [
@@ -21,6 +21,7 @@ export const illustrations: readonly IllustrationProject[] = [
       alt: "Autorska ilustracja rudowłosej postaci w bordowej palecie",
     },
     gallery: illustrationGalleries.wybrane,
+    collections: illustrationCollections.wybrane,
     year: "2024—2026",
     services: ["Ilustracja", "Character design", "Art direction"],
   },
@@ -37,8 +38,9 @@ export const illustrations: readonly IllustrationProject[] = [
       alt: "Personalizowana ilustracja ślubna pary w szkockiej scenerii",
     },
     gallery: illustrationGalleries.okolicznosciowe,
-    year: "2025",
-    services: ["Ilustracja", "Personalizacja", "Print design"],
+    collections: illustrationCollections.okolicznosciowe,
+    year: "2022—2026",
+    services: ["Projekt", "Wydruk"],
   },
   {
     slug: "etykiety",
@@ -53,8 +55,9 @@ export const illustrations: readonly IllustrationProject[] = [
       alt: "Ilustracyjne etykiety na wino inspirowane postaciami historycznymi",
     },
     gallery: illustrationGalleries.etykiety,
-    year: "2024",
-    services: ["Packaging", "Ilustracja", "DTP"],
+    collections: illustrationCollections.etykiety,
+    year: "2022—2023",
+    services: ["Projekt", "Wydruk"],
   },
 ];
 

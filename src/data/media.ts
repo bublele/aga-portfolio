@@ -1,12 +1,12 @@
-import belloroCover from "@/assets/images/belloro-cover.webp";
+import belloroCover from "@/assets/v4/home-belloro.webp";
 import belloroHero from "@/assets/images/belloro-hero.webp";
-import cloud9Cover from "@/assets/images/cloud9-cover.webp";
-import formelCover from "@/assets/images/formel-cover.webp";
-import illustrationLabels from "@/assets/images/illustration-labels.webp";
-import illustrationOccasion from "@/assets/images/illustration-occasion.webp";
-import illustrationSelected from "@/assets/images/illustration-selected.webp";
-import obstruoCover from "@/assets/images/obstruo-cover.webp";
-import portrait from "@/assets/images/portrait-highres.webp";
+import cloud9Cover from "@/assets/v4/home-cloud9.webp";
+import formelCover from "@/assets/v4/home-formel.webp";
+import illustrationLabels from "@/assets/v4/home-illustration-labels.webp";
+import illustrationOccasion from "@/assets/v4/home-illustration-occasion.webp";
+import illustrationSelected from "@/assets/v4/home-illustration-selected.webp";
+import obstruoCover from "@/assets/v4/home-obstruo.webp";
+import portrait from "@/assets/v4/portrait.webp";
 
 export const media = {
   belloroCover,

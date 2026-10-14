@@ -1,76 +1,103 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { BelloroLogoConstruction } from "@/components/belloro-logo-construction";
+import { Cloud9LogoConstruction } from "@/components/cloud9-logo-construction";
 import { ContactFooter } from "@/components/contact-footer";
+import { Formel7LogoConstruction } from "@/components/formel7-logo-construction";
+import { ObstruoLogoConstruction } from "@/components/obstruo-logo-construction";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
+import styles from "@/components/portfolio-detail.module.css";
 import type { CaseStudy } from "@/types/case-study";
 
-type CaseStudyDetailProps = {
-  caseStudy: CaseStudy;
-};
+const identity = {
+  belloro: {
+    Construction: BelloroLogoConstruction,
+    symbol: "/belloro/symbol.svg",
+    title: "Litera, kwiat,\nornament.",
+    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
+    colors: ["#72645d", "#ffffff", "#bbb2a8"],
+  },
+  cloud9: {
+    Construction: Cloud9LogoConstruction,
+    symbol: "/cloud9/symbol.svg",
+    title: "Litera, kwiat,\nornament.",
+    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
+    colors: ["#000000", "#ffffff", "#4f4f4f"],
+  },
+  obstruo: {
+    Construction: ObstruoLogoConstruction,
+    symbol: "/obstruo/symbol.svg",
+    title: "Litera, kwiat,\nornament.",
+    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
+    colors: ["#c6b3ff", "#000000", "#ffffff"],
+  },
+  formel: {
+    Construction: Formel7LogoConstruction,
+    symbol: "/formel7/symbol.svg",
+    title: "Litera, kwiat,\nornament.",
+    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
+    colors: ["#151a1d", "#ffffff", "#00a6e8"],
+  },
+} as const;
 
-export function CaseStudyDetail({ caseStudy }: CaseStudyDetailProps) {
+export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
   const hero = caseStudy.hero ?? caseStudy.cover;
+  const { Construction, symbol, colors, title, copy } = identity[caseStudy.theme];
 
   return (
-    <article className={`case-detail-html case-detail-html--${caseStudy.theme}`}>
-      <Link className="portfolio-back" href="/case-studies">
-        <span aria-hidden="true">←</span> Wszystkie projekty
-      </Link>
+    <article className={styles.project}>
+      <div className={styles.surface}>
+        <Link className={styles.back} href="/#projekty">← Portfolio</Link>
+        <div className="page-shell">
+          <header className={styles.intro}>
+            <p className={styles.year}>Rok: {caseStudy.year}</p>
+            <h1>{caseStudy.displayTitle}</h1>
+            <p className={styles.subtitle}>{caseStudy.client}</p>
+            <div className={styles.description}>
+              <p>{caseStudy.description[0]}</p>
+            </div>
+            <div className={styles.scope}>
+              <strong>Zakres prac:</strong>
+              <ul>{caseStudy.services.map((service) => <li key={service}>{service}</li>)}</ul>
+            </div>
+          </header>
 
-      <div className="case-detail-html__hero">
-        <Image
-          alt={hero.alt}
-          fill
-          placeholder="blur"
-          preload
-          sizes="100vw"
-          src={hero.src}
-        />
-      </div>
-
-      <header className="case-detail-html__intro page-shell">
-        <div className="case-detail-html__copy">
-          <p className="eyebrow">{caseStudy.category}</p>
-          <h1>{caseStudy.displayTitle}</h1>
-          <p className="case-detail-html__client">{caseStudy.client}</p>
-          <div className="case-detail-html__description">
-            {caseStudy.description.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+          <figure className={styles.hero}>
+            <Image alt={hero.alt} placeholder="blur" preload sizes="(max-width: 1512px) 86vw, 1296px" src={hero.src} />
+          </figure>
+          <section className={styles.story}>
+            <h2>Wizja, komunikacja<br />i nowy początek</h2>
+            <p>{caseStudy.description.slice(1).join(" ")}</p>
+          </section>
+          <div className={styles.construction}><Construction /></div>
+          <div aria-label={`Warianty kolorystyczne znaku ${caseStudy.title}`} className={`${styles.palette} ${styles[caseStudy.theme]}`}>
+            {colors.map((color, index) => (
+              <div className={styles.paletteItem} key={color} style={{ backgroundColor: color }}>
+                <Image
+                  alt={`${caseStudy.title} — wariant ${index + 1}`}
+                  className={index === 1 ? styles.paletteInk : styles.paletteReverse}
+                  height={240}
+                  src={caseStudy.theme === "formel" && index === 1
+                    ? "/formel7/symbol-dark.svg"
+                    : caseStudy.theme === "belloro" && index === 1
+                      ? "/belloro/symbol-gradient.svg"
+                      : caseStudy.theme === "obstruo" && index > 0
+                        ? "/obstruo/symbol-accent.svg"
+                        : symbol}
+                  unoptimized
+                  width={240}
+                />
+              </div>
             ))}
           </div>
-          <div className="case-detail-html__scope">
-            <strong>Zakres prac:</strong>
-            <ul>
-              {caseStudy.services.map((service) => (
-                <li key={service}>{service}</li>
-              ))}
-            </ul>
-          </div>
+          <section className={`${styles.story} ${styles.applications}`}>
+            <h2>{title}</h2>
+            <p>{copy}</p>
+          </section>
+          <PortfolioGallery items={caseStudy.gallery} label={`Galeria projektu ${caseStudy.title}`} />
         </div>
-
-        <figure className="case-detail-html__cover">
-          <Image
-            alt={caseStudy.cover.alt}
-            placeholder="blur"
-            sizes="(max-width: 720px) 100vw, 38vw"
-            src={caseStudy.cover.src}
-          />
-        </figure>
-      </header>
-
-      <PortfolioGallery
-        interactiveLogoConstruction={
-          caseStudy.slug === "belloro" ||
-          caseStudy.slug === "cloud9" ||
-          caseStudy.slug === "formel7" ||
-          caseStudy.slug === "obstruo"
-            ? caseStudy.slug
-            : undefined
-        }
-        items={caseStudy.gallery}
-        label={`Galeria projektu ${caseStudy.displayTitle}`}
-      />
+      </div>
       <ContactFooter />
     </article>
   );

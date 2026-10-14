@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ContactFooter } from "@/components/contact-footer";
-import { ExpertiseHighlights } from "@/components/expertise-highlights";
 import { IllustrationCard } from "@/components/illustration-card";
 import { JsonLd } from "@/components/json-ld";
 import { ProjectCard } from "@/components/project-card";
@@ -55,17 +54,18 @@ export default function HomePage() {
             </h1>
             <p className="home-hero__role">Graphic designer / UI</p>
             <p className="home-hero__bio">
-              W projektowaniu łączę estetykę z funkcjonalnością i świadomie
-              podejmuję każdą decyzję. Tworzę rozwiązania, które mają wyrazisty
-              charakter, pozostają spójne i realnie wspierają cele marki -
-              niezależnie od skali projektu.
+              10 lat doświadczenia w branży, wszechstronność i konkretne podejście
+              do celów. Zarządzam projektami od początku do końca na każdym ich
+              etapie: od bezpośredniej komunikacji z klientem, przez pełny branding
+              (brandbooki, księgi znaku), autorskie ilustracje, DTP, kompleksowe
+              grafiki i posty do mediów społecznościowych, aż po zaawansowane
+              projektowanie stron internetowych w Figmie.
             </p>
             <p className="home-hero__lead">
               Mój szeroki wachlarz umiejętności pozwala mi na elastyczne
               dostarczanie spójnych rozwiązań zarówno dla nośników cyfrowych,
               jak i fizycznych.
             </p>
-            <ExpertiseHighlights />
             <SocialMarks />
             <Link className="primary-button" href="#projekty">
               My work <span aria-hidden="true">›</span>

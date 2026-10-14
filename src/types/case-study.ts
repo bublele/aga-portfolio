@@ -7,6 +7,7 @@ export type PortfolioImage = {
 
 export type PortfolioGalleryItem = PortfolioImage & {
   layout?: "full" | "half";
+  spanRows?: number;
 };
 
 export type CaseStudySection = {

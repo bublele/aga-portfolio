@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Source_Sans_3 } from "next/font/google";
+import { Bricolage_Grotesque, Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { isPublicSite, siteConfig } from "@/lib/site";
 
 import "./globals.css";
 
-const sourceSans = Source_Sans_3({
+const inter = Inter({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-source-sans",
+  variable: "--font-body",
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-display",
 });
 
 export const metadata: Metadata = {
@@ -86,7 +91,7 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pl">
-      <body className={sourceSans.variable}>
+      <body className={`${inter.variable} ${bricolage.variable}`}>
         <a className="skip-link" href="#main-content">
           Przejdź do treści
         </a>

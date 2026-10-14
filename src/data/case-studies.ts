@@ -40,8 +40,8 @@ export const caseStudies: readonly CaseStudy[] = [
     summary:
       "Kompleksowy branding salonu jubilerskiego — od subtelnego monogramu po elegancki system opakowań i materiałów sprzedażowych.",
     description: [
-      "Belloro to wyjątkowy salon jubilerski, oferujący biżuterię najwyższej jakości, która łączy ponadczasową klasykę z nowoczesnym designem.",
-      "W ramach współpracy opracowano kompleksową identyfikację wizualną, oddającą luksusowy, a zarazem przystępny charakter marki. Proces projektowy poprzedzono analizą wartości firmy, co pozwoliło stworzyć logo idealnie rezonujące z jej filozofią. Dzięki płynnej komunikacji i wzajemnemu zaufaniu precyzyjnie dopracowano każdy detal. Nowy wizerunek wyróżnia Belloro na rynku i stanowi solidny fundament do dalszego rozwoju.",
+      "Belloro to wyjątkowy salon jubilerski, oferujący biżuterię najwyższej jakości, która łączy ponadczasową klasykę z nowoczesnym designem. W ramach współpracy opracowano kompleksową identyfikację wizualną, oddającą luksusowy, a zarazem przystępny charakter marki.",
+      "Proces projektowy poprzedzono analizą wartości firmy, co pozwoliło stworzyć logo idealnie rezonujące z jej filozofią. Dzięki płynnej komunikacji i wzajemnemu zaufaniu precyzyjnie dopracowano każdy detal. Nowy wizerunek wyróżnia Belloro na rynku i stanowi solidny fundament do dalszego rozwoju.",
     ],
     client: "Salon Jubilerski",
     year: "2024",
@@ -51,7 +51,7 @@ export const caseStudies: readonly CaseStudy[] = [
       alt: "Złoty monogram Belloro na fakturowanym papierze",
     },
     hero: {
-      src: media.belloroHero,
+      src: caseStudyHeroes.belloro,
       alt: "Logotyp Belloro na fakturowanym, beżowym tle",
     },
     gallery: caseStudyGalleries.belloro,
@@ -68,11 +68,11 @@ export const caseStudies: readonly CaseStudy[] = [
     summary:
       "Nowoczesna identyfikacja wizualna dla neutralnej warstwy kontrolnej sztucznej inteligencji.",
     description: [
-      "Obstruo.ai to zaawansowane rozwiązanie technologiczne — neutralna warstwa kontrolna (control plane) dla sztucznej inteligencji, pozwalająca przedsiębiorstwom na swobodne zarządzanie ruchem modeli LLM i serwerów MCP.",
+      "Obstruo.ai to zaawansowane rozwiązanie technologiczne – neutralna warstwa kontrolna (control plane) dla sztucznej inteligencji, pozwalająca przedsiębiorstwom na swobodne zarządzanie ruchem modeli LLM i serwerów MCP.",
       "Na potrzeby projektu stworzono nowoczesne logo, oddające innowacyjny charakter marki. Zarówno koncepcja, jak i jej wizualne wykonanie to w pełni autorska realizacja, przeprowadzona za pośrednictwem agencji IDgroup Team.",
     ],
     client: "Operating system",
-    year: "2024",
+    year: "2026",
     services: ["Projekt logo", "Materiały brandingowe"],
     cover: {
       src: media.obstruoCover,
@@ -100,8 +100,8 @@ export const caseStudies: readonly CaseStudy[] = [
       "W ramach współpracy zadbano o profesjonalny wizerunek firmy. Opracowano nowoczesne logo, bazowe materiały brandingowe i w pełni funkcjonalną stronę internetową. Partnerskie podejście klienta umożliwiło precyzyjne dopasowanie koncepcji wizualnej, a realizacja przebiegała w znakomitej, twórczej atmosferze.",
     ],
     client: "Car detailing",
-    year: "2024",
-    services: ["Projekt logo", "Projekt strony internetowej", "Materiały brandingowe"],
+    year: "2025",
+    services: ["Projekt logo", "Design strony internetowej", "Materiały brandingowe"],
     cover: {
       src: media.formelCover,
       alt: "Czarno-niebieska bluza z logo Formel7",
