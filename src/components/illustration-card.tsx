@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { keepPolishWordsTogether } from "@/lib/typography";
 import type { IllustrationProject } from "@/types/illustration";
 
 type IllustrationCardProps = {
@@ -30,7 +31,7 @@ export function IllustrationCard({
         />
       </div>
       <div className="illustration-card__meta">
-        <Heading>{illustration.shortTitle}</Heading>
+        <Heading>{keepPolishWordsTogether(illustration.shortTitle)}</Heading>
         <span>więcej</span>
         <span aria-hidden="true">›</span>
       </div>

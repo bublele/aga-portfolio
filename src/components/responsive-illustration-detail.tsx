@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ContactFooter } from "@/components/contact-footer";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
 import styles from "@/components/portfolio-detail.module.css";
+import { keepPolishWordsTogether } from "@/lib/typography";
 import type { IllustrationProject } from "@/types/illustration";
 
 export function IllustrationDetail({ illustration }: { illustration: IllustrationProject }) {
@@ -16,16 +17,16 @@ export function IllustrationDetail({ illustration }: { illustration: Illustratio
         <div className={`page-shell ${selected ? styles.selectedContent : ""}`}>
           <header className={`${styles.intro} ${styles.illustrationIntro} ${selected ? styles.selectedIntro : ""}`}>
             <p className={styles.year}>Lata: {illustration.year.replace("—", " – ")}</p>
-            <h1>{illustration.shortTitle}</h1>
-            <p className={styles.subtitle}>{illustration.eyebrow}</p>
+            <h1>{keepPolishWordsTogether(illustration.shortTitle)}</h1>
+            <p className={styles.subtitle}>{keepPolishWordsTogether(illustration.eyebrow)}</p>
             <div className={styles.description}>
               {illustration.description.map((paragraph, index) => (
-                <p className={index === 1 ? styles.lead : undefined} key={paragraph}>{paragraph}</p>
+                <p className={index === 1 ? styles.lead : undefined} key={paragraph}>{keepPolishWordsTogether(paragraph)}</p>
               ))}
             </div>
             <div className={styles.scope}>
               <strong>Zakres prac:</strong>
-              <ul>{illustration.services.map((service) => <li key={service}>{service}</li>)}</ul>
+              <ul>{illustration.services.map((service) => <li key={service}>{keepPolishWordsTogether(service)}</li>)}</ul>
             </div>
           </header>
           <div className={styles.collections}>
@@ -34,7 +35,7 @@ export function IllustrationDetail({ illustration }: { illustration: Illustratio
                 {collection.title && (
                   <header className={styles.collectionHeading}>
                     {collection.year && <p className={styles.year}>Rok: {collection.year}</p>}
-                    <h2>{collection.title}</h2>
+                    <h2>{keepPolishWordsTogether(collection.title)}</h2>
                   </header>
                 )}
                 <PortfolioGallery items={collection.images} label={`Galeria ${collection.title ?? illustration.title}`} />

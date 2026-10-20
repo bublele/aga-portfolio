@@ -41,7 +41,7 @@
 }
 .subtitle { margin: 12px 0 40px; font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: clamp(28px, 2.65vw, 40px); line-height: 0.75; }
 .description { max-width: 682px; }
-.description p { margin: 0; font-size: 18px; font-weight: 300; line-height: 28px; }
+.description p { margin: 0; font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 300; line-height: 28px; }
 .description p + p { margin-top: 12px; }
 .description p.lead { font-weight: 700; }
 .scope { margin-top: 32px; }
@@ -54,12 +54,12 @@
 .story {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
+  align-items: center;
   gap: 24px;
   padding-block: 148px;
 }
 .story h2 { max-width: 620px; margin: 0; font-family: var(--font-display), Arial, Helvetica, sans-serif; font-size: clamp(32px, 3.306878vw, 50px); font-weight: 800; line-height: 1.4; letter-spacing: 0; white-space: pre-line; }
-.story p { margin: 0; font-size: 20px; line-height: 28px; }
+.story p { margin: 0; font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 300; line-height: 28px; }
 .applications h2 { white-space: pre-line; }
 .construction { margin-bottom: 48px; }
 

@@ -6,6 +6,7 @@ import { IllustrationCard } from "@/components/illustration-card";
 import { JsonLd } from "@/components/json-ld";
 import { illustrations } from "@/data/illustrations";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { keepPolishWordsTogether } from "@/lib/typography";
 
 export const metadata: Metadata = {
   title: "Ilustracje",
@@ -65,10 +66,12 @@ export default function IllustrationsPage() {
         </nav>
         <header className="case-index__header">
           <p className="eyebrow">Ilustracja / Character design / Packaging</p>
-          <h1>Ilustracje<br />i inne</h1>
+          <h1>Ilustracje<br />{keepPolishWordsTogether("i inne")}</h1>
           <p>
-            Autorskie światy, spersonalizowane historie i ilustracja, która
-            staje się integralną częścią produktu.
+            {keepPolishWordsTogether(
+              "Autorskie światy, spersonalizowane historie i ilustracja, która " +
+              "staje się integralną częścią produktu.",
+            )}
           </p>
         </header>
         <div className="illustration-grid">

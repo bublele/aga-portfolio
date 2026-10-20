@@ -7,6 +7,8 @@ import {
   IconRoute,
 } from "@tabler/icons-react";
 
+import { keepPolishWordsTogether } from "@/lib/typography";
+
 const expertiseHighlights = [
   { Icon: IconBriefcase2, label: "10+ lat doświadczenia" },
   { Icon: IconMessageCircle, label: "Bezpośrednia komunikacja" },
@@ -24,7 +26,7 @@ export function ExpertiseHighlights() {
           <span aria-hidden="true" className="expertise-highlight__icon">
             <Icon focusable="false" size={30} stroke={1.65} />
           </span>
-          <span className="expertise-highlight__label">{label}</span>
+          <span className="expertise-highlight__label">{keepPolishWordsTogether(label)}</span>
         </li>
       ))}
     </ul>

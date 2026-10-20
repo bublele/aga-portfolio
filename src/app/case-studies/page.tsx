@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/json-ld";
 import { ProjectCard } from "@/components/project-card";
 import { caseStudies } from "@/data/case-studies";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { keepPolishWordsTogether } from "@/lib/typography";
 
 export const metadata: Metadata = {
   title: "Case studies — branding i identyfikacja wizualna",
@@ -67,8 +68,10 @@ export default function CaseStudiesPage() {
           <p className="eyebrow">Selected work / 2024—2026</p>
           <h1>Case studies</h1>
           <p>
-            Cztery systemy identyfikacji — od jubilerskiego detalu po cyfrową
-            markę AI i dynamiczny świat motorsportu.
+            {keepPolishWordsTogether(
+              "Cztery systemy identyfikacji — od jubilerskiego detalu po cyfrową " +
+              "markę AI i dynamiczny świat motorsportu.",
+            )}
           </p>
         </header>
         <div className="project-grid">

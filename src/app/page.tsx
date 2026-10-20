@@ -10,6 +10,7 @@ import { caseStudies } from "@/data/case-studies";
 import { illustrations } from "@/data/illustrations";
 import { media } from "@/data/media";
 import { absoluteUrl, siteConfig, socialLinks } from "@/lib/site";
+import { keepPolishWordsTogether } from "@/lib/typography";
 
 export default function HomePage() {
   return (
@@ -54,17 +55,21 @@ export default function HomePage() {
             </h1>
             <p className="home-hero__role">Graphic designer / UI</p>
             <p className="home-hero__bio">
-              10 lat doświadczenia w branży, wszechstronność i konkretne podejście
-              do celów. Zarządzam projektami od początku do końca na każdym ich
-              etapie: od bezpośredniej komunikacji z klientem, przez pełny branding
-              (brandbooki, księgi znaku), autorskie ilustracje, DTP, kompleksowe
-              grafiki i posty do mediów społecznościowych, aż po zaawansowane
-              projektowanie stron internetowych w Figmie.
+              {keepPolishWordsTogether(
+                "10 lat doświadczenia w branży, wszechstronność i konkretne podejście " +
+                "do celów. Zarządzam projektami od początku do końca na każdym ich " +
+                "etapie: od bezpośredniej komunikacji z klientem, przez pełny branding " +
+                "(brandbooki, księgi znaku), autorskie ilustracje, DTP, kompleksowe " +
+                "grafiki i posty do mediów społecznościowych, aż po zaawansowane " +
+                "projektowanie stron internetowych w Figmie.",
+              )}
             </p>
             <p className="home-hero__lead">
-              Mój szeroki wachlarz umiejętności pozwala mi na elastyczne
-              dostarczanie spójnych rozwiązań zarówno dla nośników cyfrowych,
-              jak i fizycznych.
+              {keepPolishWordsTogether(
+                "Mój szeroki wachlarz umiejętności pozwala mi na elastyczne " +
+                "dostarczanie spójnych rozwiązań zarówno dla nośników cyfrowych, " +
+                "jak i fizycznych.",
+              )}
             </p>
             <SocialMarks />
             <div className="home-hero__actions">
@@ -97,7 +102,7 @@ export default function HomePage() {
         <section className="work-index page-shell" id="projekty">
           <div className="work-index__headings">
             <h2>1. Logo design, branding</h2>
-            <h2>2. Ilustracje i inne</h2>
+            <h2>{keepPolishWordsTogether("2. Ilustracje i inne")}</h2>
           </div>
 
           <div className="work-block">
@@ -113,7 +118,7 @@ export default function HomePage() {
 
           <div className="work-block work-block--illustrations">
             <Link className="work-block__label work-block__link" href="/illustrations">
-              <span>2. Ilustracje i inne</span>
+              <span>{keepPolishWordsTogether("2. Ilustracje i inne")}</span>
             </Link>
             <div className="illustration-grid">
               {illustrations.map((item) => (

@@ -9,6 +9,7 @@ import { Formel7LogoConstruction } from "@/components/formel7-logo-construction"
 import { ObstruoLogoConstruction } from "@/components/obstruo-logo-construction";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
 import styles from "@/components/portfolio-detail.module.css";
+import { keepPolishWordsTogether } from "@/lib/typography";
 import type { CaseStudy } from "@/types/case-study";
 
 const identity = {
@@ -47,13 +48,13 @@ export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
           <header className={styles.intro}>
             <p className={styles.year}>Rok: {caseStudy.year}</p>
             <h1>{caseStudy.displayTitle}</h1>
-            <p className={styles.subtitle}>{caseStudy.client}</p>
+            <p className={styles.subtitle}>{keepPolishWordsTogether(caseStudy.client)}</p>
             <div className={styles.description}>
-              <p>{caseStudy.description[0]}</p>
+              <p>{keepPolishWordsTogether(caseStudy.description[0])}</p>
             </div>
             <div className={styles.scope}>
               <strong>Zakres prac:</strong>
-              <ul>{caseStudy.services.map((service) => <li key={service}>{service}</li>)}</ul>
+              <ul>{caseStudy.services.map((service) => <li key={service}>{keepPolishWordsTogether(service)}</li>)}</ul>
             </div>
           </header>
 
@@ -61,8 +62,8 @@ export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
             <Image alt={hero.alt} placeholder="blur" preload sizes="(max-width: 1512px) 86vw, 1296px" src={hero.src} />
           </figure>
           <section className={styles.story}>
-            <h2>{caseStudy.storyTitle}</h2>
-            <p>{caseStudy.description.slice(1).join(" ")}</p>
+            <h2>{keepPolishWordsTogether(caseStudy.storyTitle)}</h2>
+            <p>{keepPolishWordsTogether(caseStudy.description.slice(1).join(" "))}</p>
           </section>
           <div className={styles.construction}><Construction /></div>
           <div aria-label={`Warianty kolorystyczne znaku ${caseStudy.title}`} className={`${styles.palette} ${styles[caseStudy.theme]}`}>
@@ -86,8 +87,8 @@ export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
             ))}
           </div>
           <section className={`${styles.story} ${styles.applications}`}>
-            <h2>{caseStudy.identity.title}</h2>
-            <p>{caseStudy.identity.description}</p>
+            <h2>{keepPolishWordsTogether(caseStudy.identity.title)}</h2>
+            <p>{keepPolishWordsTogether(caseStudy.identity.description)}</p>
           </section>
           <PortfolioGallery items={caseStudy.gallery} label={`Galeria projektu ${caseStudy.title}`} />
         </div>
