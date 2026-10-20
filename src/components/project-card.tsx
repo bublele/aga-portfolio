@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { AgencyBadge } from "@/components/agency-badge";
 import type { CaseStudy } from "@/types/case-study";
 
 type ProjectCardProps = {
@@ -28,6 +29,7 @@ export function ProjectCard({
         sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1512px) 43vw, 648px"
         src={project.cover.src}
       />
+      {project.slug === "obstruo" && <AgencyBadge />}
       <span className="project-card__label">
         <Heading>{project.title}</Heading>
         <span aria-hidden="true">↗</span>

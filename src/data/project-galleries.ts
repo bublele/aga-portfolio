@@ -54,10 +54,10 @@ export const caseStudyGalleries = {
 
 export const illustrationCollections = {
   wybrane: [
-    { images: [full(images.illustrationRedhead, "Rudowłosa bohaterka w bordowej palecie"), full(images.illustrationRedheadCards, "Ilustracja rudowłosej bohaterki na kartach")] },
-    { images: [half(images.illustrationNight, "Portret postaci w nocnej, niebieskiej palecie"), half(images.illustrationNightCards, "Karty z portretem w niebieskiej palecie")] },
-    { images: [full(images.illustrationWitch, "Ilustracja małej czarownicy"), full(images.illustrationWitchCards, "Ilustracja czarownicy na kartach")] },
-    { images: [half(images.illustrationPortrait, "Ilustracyjny portret kobiety", 2), half(images.illustrationPortraitCards, "Portret kobiety na kartach"), half(images.illustrationPortraitFlatlay, "Kolekcja kart z portretem kobiety")] },
+    { title: "Grzybek", year: "2022", images: [full(images.illustrationRedhead, "Rudowłosa bohaterka w bordowej palecie"), full(images.illustrationRedheadCards, "Ilustracja rudowłosej bohaterki na kartach")] },
+    { title: "Kot", year: "2022", images: [full(images.illustrationWitch, "Ilustracja małej czarownicy"), full(images.illustrationWitchCards, "Ilustracja czarownicy na kartach")] },
+    { title: "Dym", year: "2020", images: [half(images.illustrationPortrait, "Ilustracyjny portret kobiety", 2), half(images.illustrationPortraitCards, "Portret kobiety na kartach"), half(images.illustrationPortraitFlatlay, "Kolekcja kart z portretem kobiety")] },
+    { title: "Papieros", year: "2019", images: [half(images.illustrationNight, "Portret postaci w nocnej, niebieskiej palecie"), half(images.illustrationNightCards, "Karty z portretem w niebieskiej palecie")] },
   ],
   okolicznosciowe: [
     { title: "Paulina & Damian", year: "2023", images: [full(images.occasionFamily, "Portret Pauliny i Damiana z psem"), full(images.occasionFamilyCards, "Portret Pauliny i Damiana na kartach")] },

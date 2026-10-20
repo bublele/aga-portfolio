@@ -12,12 +12,18 @@ export const caseStudies: readonly CaseStudy[] = [
     summary:
       "Identyfikacja wizualna studia muzycznego Cloud 9 — od konstrukcji znaku po materiały brandingowe i zastosowania w przestrzeni.",
     description: [
-      "Studio Cloud 9 to profesjonalna przestrzeń na muzycznej mapie Warszawy, stworzona z myślą o kompleksowej realizacji nagrań i produkcji dźwięku. Miejsce to wyróżnia się klimatem, który sprzyja pracy twórczej artystów.",
-      "W ramach współpracy opracowano projekt logo oraz zestaw podstawowych materiałów brandingowych. Kontakt z zespołem Cloud 9 pozwolił na sprawne i precyzyjne dopracowanie koncepcji, a sam proces przebiegał płynnie i w bardzo dobrej, twórczej atmosferze.",
+      "Cloud 9 to studio nagrań w Magazynie Sztuki na warszawskim Grochowie. Oferuje nagrania wokalne, miks i mastering oraz wynajem przestrzeni do samodzielnej pracy z dźwiękiem.",
+      "Projekt obejmuje logo i materiały brandingowe. Prezentacja pokazuje konstrukcję sygnetu, poziomy i pionowy układ logotypu oraz wizualizacje zastosowań identyfikacji: od odzieży po oznakowanie i nośniki reklamowe.",
     ],
+    storyTitle: "Identyfikacja\nstudia nagrań",
+    identity: {
+      title: "Akustyka, audio,\nCloud 9.",
+      description:
+        "Zaokrąglone linie tworzą zwarty, geometryczny sygnet. Znak występuje samodzielnie oraz w połączeniu z nazwą Cloud 9. Czerń, biel i szarość łączą poszczególne warianty identyfikacji.",
+    },
     client: "Studio muzyczne",
     year: "2025",
-    services: ["Projekt logo", "Materiały brandingowe"],
+    services: ["Logo Design", "Branding", "Visual Identity"],
     cover: {
       src: media.cloud9Cover,
       alt: "Znak Cloud 9 wyświetlony na ekranie retro telewizora",
@@ -38,14 +44,20 @@ export const caseStudies: readonly CaseStudy[] = [
     displayTitle: "Belloro",
     category: "Luxury branding / jewellery",
     summary:
-      "Kompleksowy branding salonu jubilerskiego — od subtelnego monogramu po elegancki system opakowań i materiałów sprzedażowych.",
+      "Identyfikacja wizualna marki jubilerskiej Belloro — monogram, warianty znaku, papeteria i materiały prezentowe.",
     description: [
-      "Belloro to wyjątkowy salon jubilerski, oferujący biżuterię najwyższej jakości, która łączy ponadczasową klasykę z nowoczesnym designem. W ramach współpracy opracowano kompleksową identyfikację wizualną, oddającą luksusowy, a zarazem przystępny charakter marki.",
-      "Proces projektowy poprzedzono analizą wartości firmy, co pozwoliło stworzyć logo idealnie rezonujące z jej filozofią. Dzięki płynnej komunikacji i wzajemnemu zaufaniu precyzyjnie dopracowano każdy detal. Nowy wizerunek wyróżnia Belloro na rynku i stanowi solidny fundament do dalszego rozwoju.",
+      "Belloro to marka jubilerska oferująca pierścionki zaręczynowe, obrączki ślubne i biżuterię ze złota. Jej oferta łączy tradycyjne złotnictwo ze współczesnymi wzorami.",
+      "Projekt obejmuje logo i materiały brandingowe. W prezentacji monogramowi towarzyszą logotyp, warianty kolorystyczne oraz wizualizacje papeterii, voucherów i opakowań prezentowych.",
     ],
+    storyTitle: "Identyfikacja\nmarki jubilerskiej",
+    identity: {
+      title: "Litera, kwiat,\nornament.",
+      description:
+        "Symetryczne linie monogramu układają się w literę B i dekoracyjną, roślinną formę. Sygnet występuje samodzielnie oraz obok logotypu. Stonowana paleta i złote wykończenia pojawiają się w wizualizacjach materiałów marki.",
+    },
     client: "Salon Jubilerski",
     year: "2024",
-    services: ["Projekt logo", "Materiały brandingowe"],
+    services: ["Logo Design", "Branding", "Visual Identity"],
     cover: {
       src: media.belloroCover,
       alt: "Złoty monogram Belloro na fakturowanym papierze",
@@ -66,14 +78,20 @@ export const caseStudies: readonly CaseStudy[] = [
     displayTitle: "Obstruo.ai",
     category: "AI product / visual identity",
     summary:
-      "Nowoczesna identyfikacja wizualna dla neutralnej warstwy kontrolnej sztucznej inteligencji.",
+      "Logo i materiały identyfikacji wizualnej Obstruo.ai — platformy zarządzania zasadami działania modeli, agentów i narzędzi AI.",
     description: [
-      "Obstruo.ai to zaawansowane rozwiązanie technologiczne – neutralna warstwa kontrolna (control plane) dla sztucznej inteligencji, pozwalająca przedsiębiorstwom na swobodne zarządzanie ruchem modeli LLM i serwerów MCP.",
-      "Na potrzeby projektu stworzono nowoczesne logo, oddające innowacyjny charakter marki. Zarówno koncepcja, jak i jej wizualne wykonanie to w pełni autorska realizacja, przeprowadzona za pośrednictwem agencji IDgroup Team.",
+      "Obstruo.ai to platforma AI governance, która pozwala organizacjom określać i egzekwować zasady działania modeli, agentów i narzędzi AI. Łączy kontrolę dostępu i przetwarzania danych z rejestrowaniem decyzji systemu.",
+      "Projekt logo i materiałów brandingowych zrealizowany za pośrednictwem agencji IDgroup Team. Prezentacja zestawia płaskie warianty znaku z jego przestrzenną, szklaną interpretacją oraz wizualizacjami materiałów marki.",
     ],
-    client: "Operating system",
+    storyTitle: "Znak dla\nplatformy AI",
+    identity: {
+      title: "Moduł, geometria,\nprzestrzeń.",
+      description:
+        "Sygnet składa się z geometrycznych modułów, które tworzą wspólną, zwartą formę. Prezentacja pokazuje znak w wersji płaskiej i przestrzennej oraz jego zestawienie z logotypem Obstruo.ai. Paleta łączy fiolet, czerń i biel.",
+    },
+    client: "Platforma AI governance",
     year: "2026",
-    services: ["Projekt logo", "Materiały brandingowe"],
+    services: ["Logo Design", "Branding", "Visual Identity"],
     cover: {
       src: media.obstruoCover,
       alt: "Fioletowy szklany znak Obstruo.ai w przestrzeni 3D",
@@ -96,12 +114,18 @@ export const caseStudies: readonly CaseStudy[] = [
     summary:
       "Identyfikacja wizualna szwajcarskiej marki mobilnego detailingu samochodowego klasy premium.",
     description: [
-      "Formel 7 to szwajcarska marka z Zurychu, która świadczy usługi mobilnego detailingu samochodowego klasy premium. Wyróżnia ją dbałość o najmniejsze detale, innowacyjne podejście do pielęgnacji pojazdów oraz pasja do perfekcji.",
-      "W ramach współpracy zadbano o profesjonalny wizerunek firmy. Opracowano nowoczesne logo, bazowe materiały brandingowe i w pełni funkcjonalną stronę internetową. Partnerskie podejście klienta umożliwiło precyzyjne dopasowanie koncepcji wizualnej, a realizacja przebiegała w znakomitej, twórczej atmosferze.",
+      "Formel7 oferuje mobilny detailing samochodowy w Zurychu i okolicach. Usługi pielęgnacji wnętrza i nadwozia realizuje na miejscu, pod adresem wskazanym przez klienta.",
+      "Projekt obejmuje logo, design strony internetowej i materiały brandingowe. Prezentacja pokazuje konstrukcję znaku, projekty widoków strony oraz wizualizacje identyfikacji na materiałach drukowanych, odzieży i samochodzie.",
     ],
+    storyTitle: "Identyfikacja\ni projekt strony",
+    identity: {
+      title: "Geometria,\nkierunek, detal.",
+      description:
+        "Kanciaste formy łączą literę F i cyfrę 7 w jeden sygnet. Znak występuje samodzielnie oraz w poziomym logotypie. Kontrast jasnych i ciemnych elementów z niebieskim akcentem powraca w projektach strony i materiałów marki.",
+    },
     client: "Car detailing",
     year: "2025",
-    services: ["Projekt logo", "Design strony internetowej", "Materiały brandingowe"],
+    services: ["Logo Design", "Web Design", "Branding", "Visual Identity"],
     cover: {
       src: media.formelCover,
       alt: "Czarno-niebieska bluza z logo Formel7",

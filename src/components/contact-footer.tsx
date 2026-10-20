@@ -6,8 +6,8 @@ export function ContactFooter() {
       <div className="contact-footer__inner">
         <h2>Zróbmy coś razem</h2>
         <p>
-          I&apos;d love to hear from you and explore collaboration,
-          <br /> answer your questions, or simply chat.
+          Napisz do mnie! Chętnie omówię wspólne projekty,
+          <br /> odpowiem na pytania albo po prostu pogadam.
         </p>
         <div className="contact-footer__actions">
           <SocialMarks inverse />

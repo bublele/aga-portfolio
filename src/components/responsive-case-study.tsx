@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { AgencyBadge } from "@/components/agency-badge";
 import { BelloroLogoConstruction } from "@/components/belloro-logo-construction";
 import { Cloud9LogoConstruction } from "@/components/cloud9-logo-construction";
 import { ContactFooter } from "@/components/contact-footer";
@@ -14,40 +15,33 @@ const identity = {
   belloro: {
     Construction: BelloroLogoConstruction,
     symbol: "/belloro/symbol.svg",
-    title: "Litera, kwiat,\nornament.",
-    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
     colors: ["#72645d", "#ffffff", "#bbb2a8"],
   },
   cloud9: {
     Construction: Cloud9LogoConstruction,
     symbol: "/cloud9/symbol.svg",
-    title: "Litera, kwiat,\nornament.",
-    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
     colors: ["#000000", "#ffffff", "#4f4f4f"],
   },
   obstruo: {
     Construction: ObstruoLogoConstruction,
     symbol: "/obstruo/symbol.svg",
-    title: "Litera, kwiat,\nornament.",
-    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
     colors: ["#c6b3ff", "#000000", "#ffffff"],
   },
   formel: {
     Construction: Formel7LogoConstruction,
     symbol: "/formel7/symbol.svg",
-    title: "Litera, kwiat,\nornament.",
-    copy: "Misterne kształty układające się w literę B, odczytywaną jako naturalny kwiat i dekoracyjny ornament, a jednocześnie jako wyraz eleganckiego rzemiosła. Jeden sygnet, wiele interpretacji.",
     colors: ["#151a1d", "#ffffff", "#00a6e8"],
   },
 } as const;
 
 export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
   const hero = caseStudy.hero ?? caseStudy.cover;
-  const { Construction, symbol, colors, title, copy } = identity[caseStudy.theme];
+  const { Construction, symbol, colors } = identity[caseStudy.theme];
 
   return (
     <article className={styles.project}>
       <div className={styles.surface}>
+        {caseStudy.slug === "obstruo" && <AgencyBadge className={styles.projectAgencyBadge} />}
         <Link className={styles.back} href="/#projekty">← Portfolio</Link>
         <div className="page-shell">
           <header className={styles.intro}>
@@ -67,7 +61,7 @@ export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
             <Image alt={hero.alt} placeholder="blur" preload sizes="(max-width: 1512px) 86vw, 1296px" src={hero.src} />
           </figure>
           <section className={styles.story}>
-            <h2>Wizja, komunikacja<br />i nowy początek</h2>
+            <h2>{caseStudy.storyTitle}</h2>
             <p>{caseStudy.description.slice(1).join(" ")}</p>
           </section>
           <div className={styles.construction}><Construction /></div>
@@ -92,8 +86,8 @@ export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
             ))}
           </div>
           <section className={`${styles.story} ${styles.applications}`}>
-            <h2>{title}</h2>
-            <p>{copy}</p>
+            <h2>{caseStudy.identity.title}</h2>
+            <p>{caseStudy.identity.description}</p>
           </section>
           <PortfolioGallery items={caseStudy.gallery} label={`Galeria projektu ${caseStudy.title}`} />
         </div>

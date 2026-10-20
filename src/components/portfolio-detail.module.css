@@ -23,6 +23,12 @@
 }
 .back:hover { text-decoration: underline; text-underline-offset: 4px; }
 
+.projectAgencyBadge {
+  left: max(var(--page-gutter), calc((100% - 1296px) / 2));
+  right: auto;
+  width: 32px;
+}
+
 .intro { padding-block: 108px; }
 .year { margin: 0 0 16px; font-size: 16px; line-height: 30px; }
 .intro h1 {
@@ -42,7 +48,7 @@
 .scope strong { display: block; margin-bottom: 12px; font-size: 18px; line-height: 34px; }
 .scope ul { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; list-style: none; }
 .scope li { padding: 10px 24px; border: 1px solid #090909; font-size: 18px; line-height: 20px; }
-.hero { margin: 0; }
+.hero { position: relative; margin: 0; }
 .hero img, .galleryItem img { display: block; width: 100%; height: auto; }
 
 .story {
@@ -52,7 +58,7 @@
   gap: 24px;
   padding-block: 148px;
 }
-.story h2 { max-width: 620px; margin: 0; font-family: var(--font-display), Arial, Helvetica, sans-serif; font-size: clamp(32px, 3.306878vw, 50px); font-weight: 800; line-height: 1.4; letter-spacing: 0; }
+.story h2 { max-width: 620px; margin: 0; font-family: var(--font-display), Arial, Helvetica, sans-serif; font-size: clamp(32px, 3.306878vw, 50px); font-weight: 800; line-height: 1.4; letter-spacing: 0; white-space: pre-line; }
 .story p { margin: 0; font-size: 20px; line-height: 28px; }
 .applications h2 { white-space: pre-line; }
 .construction { margin-bottom: 48px; }
@@ -83,9 +89,7 @@
 .surface > :global(.page-shell) { padding-bottom: 108px; }
 .illustrationIntro .description { max-width: 1080px; margin-top: 24px; }
 .illustrationIntro h1 { font-size: clamp(40px, 4vw, 60px); line-height: 1.333333; }
-.selectedIntro .description { max-width: none; margin-top: 24px; }
-.selectedIntro { padding-bottom: 96px; }
-.surface > .selectedContent { padding-bottom: 360px; }
+.selectedIntro .description { max-width: 960px; margin-top: 24px; }
 .collections { display: grid; gap: 108px; }
 .collections .gallery { gap: 32px; }
 .selectedIntro + .collections { gap: 108px; }

@@ -67,9 +67,19 @@ export default function HomePage() {
               jak i fizycznych.
             </p>
             <SocialMarks />
-            <Link className="primary-button" href="#projekty">
-              My work <span aria-hidden="true">›</span>
-            </Link>
+            <div className="home-hero__actions">
+              <Link className="primary-button" href="#projekty">
+                My work <span aria-hidden="true">›</span>
+              </Link>
+              <a
+                className="primary-button"
+                download="Agnieszka-Zobel-CV.pdf"
+                href="/agnieszka-zobel-cv.pdf"
+              >
+                Pobierz CV <span aria-hidden="true">↓</span>
+                <span className="visually-hidden">(PDF)</span>
+              </a>
+            </div>
           </div>
           <div className="home-hero__portrait">
             <Image

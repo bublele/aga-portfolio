@@ -12,18 +12,21 @@ export const illustrations: readonly IllustrationProject[] = [
     slug: "wybrane",
     title: "Wybrane ilustracje",
     shortTitle: "Wybrane",
-    eyebrow: "Autorskie ilustracje",
+    eyebrow: "Ilustracje po godzinach",
     summary:
       "Selekcja ilustracji, w których charakter postaci, kolor i detal budują własny, rozpoznawalny świat.",
-    description: illustrationDescription,
+    description: [
+      "Twórczość to dla mnie nie tylko praca komercyjna, ale też ciągła potrzeba eksperymentowania z formą, kolorem i kreską. W tej sekcji zebrałam moje prywatne, autorskie ilustracje – projekty tworzone bez narzuconych ram i wytycznych.",
+      "To przestrzeń pełna swobody artystycznej, w której testuję nowe style i techniki. Każda z tych prac pokazuje moje osobiste spojrzenie na ilustrację i stanowi naturalne zaplecze dla pomysłów, które później wykorzystuję w projektach dla klientów.",
+    ],
     image: {
       src: media.illustrationSelected,
       alt: "Autorska ilustracja rudowłosej postaci w bordowej palecie",
     },
     gallery: illustrationGalleries.wybrane,
     collections: illustrationCollections.wybrane,
-    year: "2024—2026",
-    services: ["Ilustracja", "Character design", "Art direction"],
+    year: "2019—2024",
+    services: ["Ilustracje"],
   },
   {
     slug: "okolicznosciowe",

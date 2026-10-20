@@ -27,6 +27,11 @@ export type CaseStudy = {
   category: string;
   summary: string;
   description: readonly string[];
+  storyTitle: string;
+  identity: {
+    title: string;
+    description: string;
+  };
   client: string;
   year: string;
   services: readonly string[];
