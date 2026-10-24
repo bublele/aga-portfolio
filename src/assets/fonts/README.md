@@ -21,7 +21,7 @@ z poniższymi znakami oraz `family=Inter:wght@100..900` albo
 - U+2000–206F, U+2190–2199 oraz €, − i ™: odstępy, interpunkcja i symbole.
 
 Dokładne publiczne adresy zapytań i pobranych fontów zapisano w
-`audit/evidence/font-provenance.json`. Parametr `text` jest kodowany jako UTF-8.
+`src/assets/fonts/sources.json`. Parametr `text` jest kodowany jako UTF-8.
 Mechanizm podzbiorów opisuje [Google Fonts CSS API](https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests).
 
 Po dodaniu tekstu w innym alfabecie należy rozszerzyć podzbiór lub dodać
