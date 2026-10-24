@@ -26,14 +26,12 @@ Możesz odpowiedzieć numerami sekcji; krótkie odpowiedzi wystarczą.
 
 ## 5. Pomiar kontaktów i GA4
 
-- Kod GTM/GA4 z obsługą zgody istnieje już na `main` i został zachowany przy scaleniu.
-  Potwierdź właściciela usługi GA4 i kontenera GTM oraz to, czy kontener jest opublikowany.
-- Jeżeli identyfikatory nie są jeszcze skonfigurowane, potrzebne będą wyłącznie
-  publiczne identyfikatory **GTM-…** oraz **G-…**. Jeśli są ustawione, nie trzeba
-  przekazywać ich ponownie.
+- GTM i GA4 są już skonfigurowane na produkcji. Identyfikatorów nie trzeba
+  dostarczać ponownie. Potwierdź, kto zarządza docelową usługą GA4 i kontenerem GTM.
 - Wskaż najważniejszy cel: kliknięcie e-maila, pobranie CV czy przejście do profilu.
   Rzeczywiste zapytania o współpracę licz oddzielnie od samych kliknięć.
 - Potwierdź, czy chcesz pomiar tych kliknięć w GA4. Zdarzenia są oznaczone w HTML;
   nie włączano płatnych zdarzeń Vercel na Hobby.
-- W panelu GA4 sprawdź testową wizytę po akceptacji analityki i później test kontaktu.
-  Sam dostępny skrypt nie potwierdza poprawnego raportowania w panelu.
+- W panelu GA4 potwierdź testową wizytę po akceptacji analityki. Test techniczny
+  wykazał GTM HTTP 200 i wysyłkę GA4 HTTP 204, poprawne odrzucenie oraz wycofanie
+  zgody. Raportów w Twoim panelu Google nie odczytywano.

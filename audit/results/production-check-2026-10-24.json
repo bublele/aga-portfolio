@@ -1,0 +1,550 @@
+{
+  "testedSourceCommit": "4b3c356a6aee4e4f165e97d22b1e127aea63d56f",
+  "testedProductionDeploymentId": "dpl_56hQGnKGkL6wYAjm3Qsk8nogvqZv",
+  "lighthouse": {
+    "origin": "https://zobo.design",
+    "method": "Lighthouse on public production; fresh Chrome profile per run; default simulated throttling; all production scripts enabled; default consent state",
+    "runs": [
+      {
+        "page": "home",
+        "path": "/",
+        "device": "mobile",
+        "run": 1,
+        "file": "public-cwv-home-mobile-1.json",
+        "time": "2026-10-24T16:10:11.301Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 93,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 2876.072,
+        "fcpMs": 2081.1549999999997,
+        "tbtMs": 34.5,
+        "cls": 0,
+        "warnings": []
+      },
+      {
+        "page": "home",
+        "path": "/",
+        "device": "mobile",
+        "run": 2,
+        "file": "public-cwv-home-mobile-2.json",
+        "time": "2026-10-24T16:10:24.096Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 87,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 3633.297,
+        "fcpMs": 2007.691,
+        "tbtMs": 25.5,
+        "cls": 0,
+        "warnings": []
+      },
+      {
+        "page": "home",
+        "path": "/",
+        "device": "mobile",
+        "run": 3,
+        "file": "public-cwv-home-mobile-3.json",
+        "time": "2026-10-24T16:10:36.559Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 88,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 3515.567,
+        "fcpMs": 1997.201,
+        "tbtMs": 74,
+        "cls": 0,
+        "warnings": []
+      },
+      {
+        "page": "obstruo",
+        "path": "/case-studies/obstruo",
+        "device": "mobile",
+        "run": 1,
+        "file": "public-cwv-obstruo-mobile-1.json",
+        "time": "2026-10-24T16:10:48.963Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 90,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 3275.572,
+        "fcpMs": 2018.3160000000003,
+        "tbtMs": 21.5,
+        "cls": 0,
+        "warnings": []
+      },
+      {
+        "page": "obstruo",
+        "path": "/case-studies/obstruo",
+        "device": "mobile",
+        "run": 2,
+        "file": "public-cwv-obstruo-mobile-2.json",
+        "time": "2026-10-24T16:11:01.277Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 88,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 3539.382,
+        "fcpMs": 1975.374,
+        "tbtMs": 46.5,
+        "cls": 0,
+        "warnings": []
+      },
+      {
+        "page": "obstruo",
+        "path": "/case-studies/obstruo",
+        "device": "mobile",
+        "run": 3,
+        "file": "public-cwv-obstruo-mobile-3.json",
+        "time": "2026-10-24T16:11:13.697Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 89,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 3407.744,
+        "fcpMs": 2016.5420000000001,
+        "tbtMs": 50,
+        "cls": 0,
+        "warnings": []
+      },
+      {
+        "page": "illustrations",
+        "path": "/illustrations/okolicznosciowe",
+        "device": "mobile",
+        "run": 1,
+        "file": "public-cwv-illustrations-mobile-1.json",
+        "time": "2026-10-24T16:11:26.156Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 87,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 3637.4735,
+        "fcpMs": 2012.1865,
+        "tbtMs": 37,
+        "cls": 0,
+        "warnings": []
+      },
+      {
+        "page": "home",
+        "path": "/",
+        "device": "desktop",
+        "run": 1,
+        "file": "public-cwv-home-desktop-1.json",
+        "time": "2026-10-24T16:11:38.766Z",
+        "lighthouseVersion": "13.5.0",
+        "performance": 97,
+        "accessibility": 100,
+        "seo": 100,
+        "bestPractices": 81,
+        "lcpMs": 988.4775,
+        "fcpMs": 956.2524999999999,
+        "tbtMs": 0,
+        "cls": 0,
+        "warnings": []
+      }
+    ],
+    "groups": [
+      {
+        "page": "home",
+        "device": "mobile",
+        "runs": 3,
+        "performanceMedian": 88,
+        "performanceRange": [
+          87,
+          93
+        ],
+        "lcpMedianMs": 3515.567,
+        "lcpRangeMs": [
+          2876.072,
+          3633.297
+        ],
+        "clsMax": 0,
+        "a11yMin": 100,
+        "seoMin": 100,
+        "bestPracticesMin": 81
+      },
+      {
+        "page": "obstruo",
+        "device": "mobile",
+        "runs": 3,
+        "performanceMedian": 89,
+        "performanceRange": [
+          88,
+          90
+        ],
+        "lcpMedianMs": 3407.744,
+        "lcpRangeMs": [
+          3275.572,
+          3539.382
+        ],
+        "clsMax": 0,
+        "a11yMin": 100,
+        "seoMin": 100,
+        "bestPracticesMin": 81
+      },
+      {
+        "page": "illustrations",
+        "device": "mobile",
+        "runs": 1,
+        "performanceMedian": 87,
+        "performanceRange": [
+          87,
+          87
+        ],
+        "lcpMedianMs": 3637.4735,
+        "lcpRangeMs": [
+          3637.4735,
+          3637.4735
+        ],
+        "clsMax": 0,
+        "a11yMin": 100,
+        "seoMin": 100,
+        "bestPracticesMin": 81
+      },
+      {
+        "page": "home",
+        "device": "desktop",
+        "runs": 1,
+        "performanceMedian": 97,
+        "performanceRange": [
+          97,
+          97
+        ],
+        "lcpMedianMs": 988.4775,
+        "lcpRangeMs": [
+          988.4775,
+          988.4775
+        ],
+        "clsMax": 0,
+        "a11yMin": 100,
+        "seoMin": 100,
+        "bestPracticesMin": 81
+      }
+    ],
+    "deploymentId": "dpl_56hQGnKGkL6wYAjm3Qsk8nogvqZv",
+    "gitCommit": "4b3c356a6aee4e4f165e97d22b1e127aea63d56f"
+  },
+  "speedInsights": {
+    "source": "Vercel Speed Insights",
+    "filter": "production, requestHostname zobo.design",
+    "window": "one calendar day; may include earlier production deployments and QA visits",
+    "queries": [
+      {
+        "metric": "vercel.speed_insights.lcp_ms",
+        "aggregation": "p75",
+        "result": {
+          "query": {
+            "metric": "vercel.speed_insights.lcp_ms",
+            "aggregation": "p75",
+            "groupBy": [
+              "route",
+              "deviceType"
+            ],
+            "filter": "(requestHostname:\"zobo.design\") AND (environment:production)",
+            "startTime": "2026-10-23T00:00:00.000Z",
+            "endTime": "2026-10-25T00:00:00.000Z",
+            "granularity": {
+              "days": 1
+            },
+            "orderBy": "count",
+            "orderDirection": "desc"
+          },
+          "summary": [
+            {
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_lcp_ms_p75": 2004
+            }
+          ],
+          "data": [
+            {
+              "timestamp": "2026-10-23T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_lcp_ms_p75": null
+            },
+            {
+              "timestamp": "2026-10-24T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_lcp_ms_p75": 2004
+            }
+          ],
+          "orderBy": "count",
+          "orderDirection": "desc"
+        }
+      },
+      {
+        "metric": "vercel.speed_insights.lcp_ms",
+        "aggregation": "count",
+        "result": {
+          "query": {
+            "metric": "vercel.speed_insights.lcp_ms",
+            "aggregation": "count",
+            "groupBy": [
+              "route",
+              "deviceType"
+            ],
+            "filter": "(requestHostname:\"zobo.design\") AND (environment:production)",
+            "startTime": "2026-10-23T00:00:00.000Z",
+            "endTime": "2026-10-25T00:00:00.000Z",
+            "granularity": {
+              "days": 1
+            },
+            "orderBy": "count",
+            "orderDirection": "desc"
+          },
+          "summary": [
+            {
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_lcp_ms_count": 3
+            }
+          ],
+          "data": [
+            {
+              "timestamp": "2026-10-23T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_lcp_ms_count": 0
+            },
+            {
+              "timestamp": "2026-10-24T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_lcp_ms_count": 3
+            }
+          ],
+          "orderBy": "count",
+          "orderDirection": "desc"
+        }
+      },
+      {
+        "metric": "vercel.speed_insights.cls",
+        "aggregation": "p75",
+        "result": {
+          "query": {
+            "metric": "vercel.speed_insights.cls",
+            "aggregation": "p75",
+            "groupBy": [
+              "route",
+              "deviceType"
+            ],
+            "filter": "(requestHostname:\"zobo.design\") AND (environment:production)",
+            "startTime": "2026-10-23T00:00:00.000Z",
+            "endTime": "2026-10-25T00:00:00.000Z",
+            "granularity": {
+              "days": 1
+            },
+            "orderBy": "count",
+            "orderDirection": "desc"
+          },
+          "summary": [
+            {
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_cls_p75": 0
+            }
+          ],
+          "data": [
+            {
+              "timestamp": "2026-10-23T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_cls_p75": null
+            },
+            {
+              "timestamp": "2026-10-24T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_cls_p75": 0
+            }
+          ],
+          "orderBy": "count",
+          "orderDirection": "desc"
+        }
+      },
+      {
+        "metric": "vercel.speed_insights.inp_ms",
+        "aggregation": "p75",
+        "result": {
+          "query": {
+            "metric": "vercel.speed_insights.inp_ms",
+            "aggregation": "p75",
+            "groupBy": [
+              "route",
+              "deviceType"
+            ],
+            "filter": "(requestHostname:\"zobo.design\") AND (environment:production)",
+            "startTime": "2026-10-23T00:00:00.000Z",
+            "endTime": "2026-10-25T00:00:00.000Z",
+            "granularity": {
+              "days": 1
+            },
+            "orderBy": "count",
+            "orderDirection": "desc"
+          },
+          "summary": [
+            {
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_inp_ms_p75": 8
+            }
+          ],
+          "data": [
+            {
+              "timestamp": "2026-10-23T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_inp_ms_p75": null
+            },
+            {
+              "timestamp": "2026-10-24T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_inp_ms_p75": 8
+            }
+          ],
+          "orderBy": "count",
+          "orderDirection": "desc"
+        }
+      },
+      {
+        "metric": "vercel.speed_insights.inp_ms",
+        "aggregation": "count",
+        "result": {
+          "query": {
+            "metric": "vercel.speed_insights.inp_ms",
+            "aggregation": "count",
+            "groupBy": [
+              "route",
+              "deviceType"
+            ],
+            "filter": "(requestHostname:\"zobo.design\") AND (environment:production)",
+            "startTime": "2026-10-23T00:00:00.000Z",
+            "endTime": "2026-10-25T00:00:00.000Z",
+            "granularity": {
+              "days": 1
+            },
+            "orderBy": "count",
+            "orderDirection": "desc"
+          },
+          "summary": [
+            {
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_inp_ms_count": 1
+            }
+          ],
+          "data": [
+            {
+              "timestamp": "2026-10-23T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_inp_ms_count": 0
+            },
+            {
+              "timestamp": "2026-10-24T00:00:00.000Z",
+              "route": "/",
+              "deviceType": "desktop",
+              "vercel_speed_insights_inp_ms_count": 1
+            }
+          ],
+          "orderBy": "count",
+          "orderDirection": "desc"
+        }
+      }
+    ]
+  },
+  "redirect": {
+    "redirectStatusCode": 308,
+    "target": "zobo.design",
+    "preservesPathsAndQuery": true,
+    "checks": [
+      {
+        "source": "https://agnieszka-eight.vercel.app/",
+        "status": 308,
+        "location": "https://zobo.design/"
+      },
+      {
+        "source": "https://agnieszka-eight.vercel.app/case-studies/obstruo",
+        "status": 308,
+        "location": "https://zobo.design/case-studies/obstruo"
+      },
+      {
+        "source": "https://agnieszka-eight.vercel.app/illustrations/okolicznosciowe?ref=redirect-check",
+        "status": 308,
+        "location": "https://zobo.design/illustrations/okolicznosciowe?ref=redirect-check"
+      },
+      {
+        "source": "https://agnieszka-eight.vercel.app/agnieszka-zobel-cv.pdf",
+        "status": 308,
+        "location": "https://zobo.design/agnieszka-zobel-cv.pdf"
+      }
+    ]
+  },
+  "consentSmoke": {
+    "origin": "https://zobo.design/",
+    "test": "fresh isolated browser; reject → accept → withdraw",
+    "before": {
+      "googleRequests": 0,
+      "gaCookieNames": [],
+      "horizontalOverflow": false
+    },
+    "denied": {
+      "choice": "denied",
+      "googleScripts": 0
+    },
+    "granted": {
+      "choice": "granted",
+      "gaCookieNames": [
+        "_ga",
+        "_ga_NYRYPFLD34"
+      ]
+    },
+    "withdrawn": {
+      "choice": "denied",
+      "googleScripts": 0,
+      "gaCookieNames": []
+    },
+    "gtmStatus": 200,
+    "ga4Status": 204,
+    "requests": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "status": 200
+      },
+      {
+        "host": "www.google-analytics.com",
+        "path": "/g/collect",
+        "status": 204
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "qualityChecks": [
+    "npm run typecheck",
+    "npm run lint",
+    "npm run build",
+    "git diff --check"
+  ],
+  "bestPracticesFinding": {
+    "score": 81,
+    "audit": "deprecations",
+    "source": "https://zobo.design/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+    "warnings": [
+      "FencedFrame",
+      "StorageType.persistent",
+      "Protected Audience API"
+    ]
+  }
+}

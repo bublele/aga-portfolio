@@ -22,3 +22,6 @@ yarn-error.log*
 
 # deployment
 .vercel
+
+# Local raw audit captures; curated results live in audit/results.
+/audit/evidence/
