@@ -1,4 +1,6 @@
+import { AnalyticsPreferencesButton } from "@/components/analytics-consent";
 import { SocialMarks } from "@/components/social-marks";
+import { analyticsConfig } from "@/lib/analytics";
 
 export function ContactFooter() {
   return (
@@ -20,6 +22,7 @@ export function ContactFooter() {
             zobo.graphdesign@gmail.com
           </a>
         </div>
+        {analyticsConfig && <AnalyticsPreferencesButton />}
       </div>
     </footer>
   );
