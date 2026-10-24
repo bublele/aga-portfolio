@@ -53,7 +53,7 @@ export default function HomePage() {
               Agnieszka{" "}
               <span className="home-hero__name-line">Zobel &lsquo;zobo&rsquo;</span>
             </h1>
-            <p className="home-hero__role">Graphic designer / UI</p>
+            <p className="home-hero__role">Brand / UI / AI designer</p>
             <p className="home-hero__bio">
               {keepPolishWordsTogether(
                 "10 lat doświadczenia w branży, wszechstronność i konkretne podejście " +
@@ -74,14 +74,20 @@ export default function HomePage() {
             <SocialMarks />
             <div className="home-hero__actions">
               <Link className="primary-button" href="#projekty">
-                My work <span aria-hidden="true">›</span>
+                My work
+                <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
               </Link>
               <a
-                className="primary-button"
+                className="primary-button primary-button--outline"
                 download="Agnieszka-Zobel-CV.pdf"
                 href="/agnieszka-zobel-cv.pdf"
               >
-                Pobierz CV <span aria-hidden="true">↓</span>
+                Pobierz CV
+                <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
+                  <path d="M12 3v12m-5-5 5 5 5-5M3 15v5a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5" />
+                </svg>
                 <span className="visually-hidden">(PDF)</span>
               </a>
             </div>
