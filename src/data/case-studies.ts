@@ -15,7 +15,7 @@ export const caseStudies: readonly CaseStudy[] = [
       "Cloud 9 to studio nagrań w Magazynie Sztuki na warszawskim Grochowie. Oferuje nagrania wokalne, miks i mastering oraz wynajem przestrzeni do samodzielnej pracy z dźwiękiem.",
       "Projekt obejmuje logo i materiały brandingowe. Prezentacja pokazuje konstrukcję sygnetu, poziomy i pionowy układ logotypu oraz wizualizacje zastosowań identyfikacji: od odzieży po oznakowanie i nośniki reklamowe.",
     ],
-    storyTitle: "Identyfikacja\nstudia nagrań",
+    storyTitle: "Wizja, komunikacja\ni nowy początek.",
     identity: {
       title: "Akustyka, audio,\nCloud 9.",
       description:
@@ -49,7 +49,7 @@ export const caseStudies: readonly CaseStudy[] = [
       "Belloro to marka jubilerska oferująca pierścionki zaręczynowe, obrączki ślubne i biżuterię ze złota. Jej oferta łączy tradycyjne złotnictwo ze współczesnymi wzorami.",
       "Projekt obejmuje logo i materiały brandingowe. W prezentacji monogramowi towarzyszą logotyp, warianty kolorystyczne oraz wizualizacje papeterii, voucherów i opakowań prezentowych.",
     ],
-    storyTitle: "Identyfikacja\nmarki jubilerskiej",
+    storyTitle: "Wizja, komunikacja\ni nowy początek.",
     identity: {
       title: "Litera, kwiat,\nornament.",
       description:
@@ -83,11 +83,11 @@ export const caseStudies: readonly CaseStudy[] = [
       "Obstruo.ai to platforma AI governance, która pozwala organizacjom określać i egzekwować zasady działania modeli, agentów i narzędzi AI. Łączy kontrolę dostępu i przetwarzania danych z rejestrowaniem decyzji systemu.",
       "Projekt logo i materiałów brandingowych zrealizowany za pośrednictwem agencji IDgroup Team. Prezentacja zestawia płaskie warianty znaku z jego przestrzenną, szklaną interpretacją oraz wizualizacjami materiałów marki.",
     ],
-    storyTitle: "Znak dla\nplatformy AI",
+    storyTitle: "Wizja, komunikacja\ni nowy początek.",
     identity: {
-      title: "Moduł, geometria,\nprzestrzeń.",
+      title: "Sieć, cyfryzacja,\nminimalizm.",
       description:
-        "Sygnet składa się z geometrycznych modułów, które tworzą wspólną, zwartą formę. Prezentacja pokazuje znak w wersji płaskiej i przestrzennej oraz jego zestawienie z logotypem Obstruo.ai. Paleta łączy fiolet, czerń i biel.",
+        "Abstrakcyjne bloki splecione w cyfrową mozaikę, odczytywaną jako płynny kod, nowoczesny piksel i geometryczny układ scalony, a jednocześnie jako wyraz futurystycznego designu. Jeden sygnet, wiele interpretacji.",
     },
     client: "Platforma AI governance",
     year: "2026",
@@ -117,11 +117,11 @@ export const caseStudies: readonly CaseStudy[] = [
       "Formel7 oferuje mobilny detailing samochodowy w Zurychu i okolicach. Usługi pielęgnacji wnętrza i nadwozia realizuje na miejscu, pod adresem wskazanym przez klienta.",
       "Projekt obejmuje logo, design strony internetowej i materiały brandingowe. Prezentacja pokazuje konstrukcję znaku, projekty widoków strony oraz wizualizacje identyfikacji na materiałach drukowanych, odzieży i samochodzie.",
     ],
-    storyTitle: "Identyfikacja\ni projekt strony",
+    storyTitle: "Wizja, komunikacja\ni nowy początek.",
     identity: {
-      title: "Geometria,\nkierunek, detal.",
+      title: "Blask, ochrona,\nprecyzja.",
       description:
-        "Kanciaste formy łączą literę F i cyfrę 7 w jeden sygnet. Znak występuje samodzielnie oraz w poziomym logotypie. Kontrast jasnych i ciemnych elementów z niebieskim akcentem powraca w projektach strony i materiałów marki.",
+        "Dynamiczne, ostre linie układające się w kształt tarczy, odczytywane jako nienaganny połysk, aerodynamiczne nadwozie i tarcza chroniąca lakier, a jednocześnie jako wyraz precyzyjnego i bezkompromisowego rzemiosła detailingowego.",
     },
     client: "Car detailing",
     year: "2025",
