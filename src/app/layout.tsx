@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
+import { AnalyticsConsent } from "@/components/analytics-consent";
+import { analyticsConfig } from "@/lib/analytics";
 import { isPublicSite, siteConfig } from "@/lib/site";
 
 import "./globals.css";
@@ -96,6 +98,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           Przejdź do treści
         </a>
         {children}
+        {analyticsConfig && <AnalyticsConsent {...analyticsConfig} />}
       </body>
     </html>
   );

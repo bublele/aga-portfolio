@@ -1,0 +1,60 @@
+.panel {
+  position: fixed;
+  z-index: 1000;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  max-width: 920px;
+  max-height: calc(100dvh - 48px);
+  margin-inline: auto;
+  padding: 24px;
+  gap: 24px;
+  align-items: center;
+  overflow: auto;
+  border: 1px solid #090909;
+  background: #eeeeef;
+  color: #090909;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 15%);
+}
+
+.copy { flex: 1; min-width: 0; }
+.copy h2 { margin: 0 0 8px; font-size: 22px; line-height: 1.2; }
+.copy p { margin: 0 0 8px; font-size: 14px; line-height: 1.5; }
+.copy a { font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
+.actions { display: flex; flex-direction: column; gap: 8px; }
+.actions button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: #090909;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.actions button:hover { background: rgb(0 0 0 / 6%); }
+.actions button.closeButton { min-height: 32px; padding: 4px; border: 0; font-weight: 400; text-decoration: underline; }
+.preferencesButton {
+  display: block;
+  min-height: 44px;
+  margin-top: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .panel { right: 16px; bottom: 16px; left: 16px; max-height: calc(100dvh - 32px); padding: 16px; flex-direction: column; gap: 16px; align-items: stretch; }
+  .copy h2 { font-size: 20px; }
+  .actions { flex-direction: row; flex-wrap: wrap; }
+  .actions button { flex: 1 1 120px; }
+  .actions button.closeButton { flex-basis: 100%; }
+}
