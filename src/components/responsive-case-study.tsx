@@ -59,7 +59,7 @@ export function CaseStudyDetail({ caseStudy }: { caseStudy: CaseStudy }) {
           </header>
 
           <figure className={styles.hero}>
-            <Image alt={hero.alt} placeholder="blur" preload sizes="(max-width: 1512px) 86vw, 1296px" src={hero.src} />
+            <Image alt={hero.alt} placeholder="blur" fetchPriority="high" loading="eager" sizes="(max-width: 1512px) 86vw, 1296px" src={hero.src} />
           </figure>
           <section className={styles.story}>
             <h2>{keepPolishWordsTogether(caseStudy.storyTitle)}</h2>

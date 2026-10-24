@@ -81,6 +81,8 @@ export default function HomePage() {
               </Link>
               <a
                 className="primary-button primary-button--outline"
+                data-analytics-event="cv_download"
+                data-analytics-placement="hero"
                 download="Agnieszka-Zobel-CV.pdf"
                 href="/agnieszka-zobel-cv.pdf"
               >
@@ -97,7 +99,8 @@ export default function HomePage() {
               alt="Agnieszka Zobel — graphic designer i projektantka UI"
               fill
               placeholder="blur"
-              preload
+              fetchPriority="high"
+              loading="eager"
               quality={82}
               sizes="(max-width: 720px) calc(100vw - 48px), 620px"
               src={media.portrait}

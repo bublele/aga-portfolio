@@ -30,7 +30,6 @@ export const siteConfig = {
   author: "Agnieszka Zobel",
   locale: "pl_PL",
   language: "pl",
-  updatedAt: "2026-08-25",
   defaultOgImage: "/opengraph-image",
 } as const;
 

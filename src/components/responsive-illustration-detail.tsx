@@ -31,7 +31,7 @@ export function IllustrationDetail({ illustration }: { illustration: Illustratio
           </header>
           <div className={styles.collections}>
             {collections.map((collection, index) => (
-              <section aria-label={collection.title ?? `Ilustracje — zestaw ${index + 1}`} className={styles.collection} key={`${illustration.slug}-${index}`}>
+              <section aria-label={collection.title ?? `Ilustracje — zestaw ${index + 1}`} className={styles.collection} id={`kolekcja-${index + 1}`} key={`${illustration.slug}-${index}`}>
                 {collection.title && (
                   <header className={styles.collectionHeading}>
                     {collection.year && <p className={styles.year}>Rok: {collection.year}</p>}

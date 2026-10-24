@@ -15,7 +15,7 @@ export const caseStudies: readonly CaseStudy[] = [
       "Cloud 9 to studio nagrań w Magazynie Sztuki na warszawskim Grochowie. Oferuje nagrania wokalne, miks i mastering oraz wynajem przestrzeni do samodzielnej pracy z dźwiękiem.",
       "Projekt obejmuje logo i materiały brandingowe. Prezentacja pokazuje konstrukcję sygnetu, poziomy i pionowy układ logotypu oraz wizualizacje zastosowań identyfikacji: od odzieży po oznakowanie i nośniki reklamowe.",
     ],
-    storyTitle: "Wizja, komunikacja\ni nowy początek.",
+    storyTitle: "Identyfikacja\nstudia nagrań",
     identity: {
       title: "Akustyka, audio,\nCloud 9.",
       description:
@@ -49,7 +49,7 @@ export const caseStudies: readonly CaseStudy[] = [
       "Belloro to marka jubilerska oferująca pierścionki zaręczynowe, obrączki ślubne i biżuterię ze złota. Jej oferta łączy tradycyjne złotnictwo ze współczesnymi wzorami.",
       "Projekt obejmuje logo i materiały brandingowe. W prezentacji monogramowi towarzyszą logotyp, warianty kolorystyczne oraz wizualizacje papeterii, voucherów i opakowań prezentowych.",
     ],
-    storyTitle: "Wizja, komunikacja\ni nowy początek.",
+    storyTitle: "Identyfikacja\nmarki jubilerskiej",
     identity: {
       title: "Litera, kwiat,\nornament.",
       description:
@@ -83,7 +83,7 @@ export const caseStudies: readonly CaseStudy[] = [
       "Obstruo.ai to platforma AI governance, która pozwala organizacjom określać i egzekwować zasady działania modeli, agentów i narzędzi AI. Łączy kontrolę dostępu i przetwarzania danych z rejestrowaniem decyzji systemu.",
       "Projekt logo i materiałów brandingowych zrealizowany za pośrednictwem agencji IDgroup Team. Prezentacja zestawia płaskie warianty znaku z jego przestrzenną, szklaną interpretacją oraz wizualizacjami materiałów marki.",
     ],
-    storyTitle: "Wizja, komunikacja\ni nowy początek.",
+    storyTitle: "Znak dla\nplatformy AI",
     identity: {
       title: "Sieć, cyfryzacja,\nminimalizm.",
       description:
@@ -117,7 +117,7 @@ export const caseStudies: readonly CaseStudy[] = [
       "Formel7 oferuje mobilny detailing samochodowy w Zurychu i okolicach. Usługi pielęgnacji wnętrza i nadwozia realizuje na miejscu, pod adresem wskazanym przez klienta.",
       "Projekt obejmuje logo, design strony internetowej i materiały brandingowe. Prezentacja pokazuje konstrukcję znaku, projekty widoków strony oraz wizualizacje identyfikacji na materiałach drukowanych, odzieży i samochodzie.",
     ],
-    storyTitle: "Wizja, komunikacja\ni nowy początek.",
+    storyTitle: "Identyfikacja\ni projekt strony",
     identity: {
       title: "Blask, ochrona,\nprecyzja.",
       description:

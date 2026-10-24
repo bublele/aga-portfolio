@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import type { ReactNode } from "react";
 
+import { DeferredSiteAnalytics } from "@/components/deferred-site-analytics";
 import { isPublicSite, siteConfig } from "@/lib/site";
 
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin", "latin-ext"],
+const inter = localFont({
+  src: "../assets/fonts/inter-latin-pl-variable.woff2",
+  weight: "100 900",
+  display: "swap",
   variable: "--font-body",
 });
 
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin", "latin-ext"],
+const bricolage = localFont({
+  src: "../assets/fonts/bricolage-grotesque-latin-pl-variable.woff2",
+  weight: "200 800",
+  display: "swap",
   variable: "--font-display",
 });
 
@@ -77,6 +82,12 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+    other: process.env.BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
+      : undefined,
+  },
   formatDetection: {
     address: false,
     email: false,
@@ -96,6 +107,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           Przejdź do treści
         </a>
         {children}
+        <DeferredSiteAnalytics />
       </body>
     </html>
   );

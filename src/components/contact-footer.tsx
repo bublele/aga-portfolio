@@ -11,7 +11,12 @@ export function ContactFooter() {
         </p>
         <div className="contact-footer__actions">
           <SocialMarks inverse />
-          <a className="email-chip" href="mailto:zobo.graphdesign@gmail.com">
+          <a
+            className="email-chip"
+            data-analytics-event="contact_intent"
+            data-analytics-placement="footer"
+            href="mailto:zobo.graphdesign@gmail.com"
+          >
             zobo.graphdesign@gmail.com
           </a>
         </div>

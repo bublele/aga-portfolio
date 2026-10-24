@@ -70,7 +70,7 @@ export default function CaseStudiesPage() {
           <p>
             {keepPolishWordsTogether(
               "Cztery systemy identyfikacji — od jubilerskiego detalu po cyfrową " +
-              "markę AI i dynamiczny świat motorsportu.",
+              "markę AI i mobilny detailing samochodowy.",
             )}
           </p>
         </header>

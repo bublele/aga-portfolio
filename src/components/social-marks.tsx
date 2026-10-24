@@ -14,6 +14,9 @@ export function SocialMarks({ inverse = false }: SocialMarksProps) {
         <a
           aria-label={label}
           className={`social-mark social-mark--${icon}`}
+          data-analytics-event="social_profile_open"
+          data-analytics-placement={inverse ? "footer" : "hero"}
+          data-analytics-network={icon}
           href={href}
           key={label}
           rel="noreferrer"

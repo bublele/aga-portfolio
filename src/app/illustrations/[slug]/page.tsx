@@ -69,15 +69,30 @@ export default async function IllustrationPage({ params }: IllustrationPageProps
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "VisualArtwork",
+              "@type": "CollectionPage",
               name: illustration.title,
               description: illustration.summary,
               url: absoluteUrl(`/illustrations/${illustration.slug}`),
               image: absoluteUrl(illustration.image.src.src),
-              ...(illustration.year.includes("—")
-                ? { temporalCoverage: illustration.year }
-                : { dateCreated: illustration.year }),
-              artform: "Digital illustration",
+              temporalCoverage: illustration.year.replace("—", "/"),
+              mainEntity: {
+                "@type": "ItemList",
+                itemListElement: (illustration.collections ?? [{ images: illustration.gallery }]).map((collection, index) => ({
+                  "@type": "ListItem",
+                  position: index + 1,
+                  item: {
+                    "@type": "VisualArtwork",
+                    name: collection.title ?? illustration.title,
+                    url: absoluteUrl(`/illustrations/${illustration.slug}#kolekcja-${index + 1}`),
+                    image: collection.images.map(({ src }) => absoluteUrl(src.src)),
+                    creator: {
+                      "@type": "Person",
+                      name: siteConfig.author,
+                      url: siteConfig.url,
+                    },
+                  },
+                })),
+              },
               creator: {
                 "@type": "Person",
                 name: siteConfig.author,

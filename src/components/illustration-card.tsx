@@ -17,7 +17,6 @@ export function IllustrationCard({
 
   return (
     <Link
-      aria-label={`Zobacz projekt: ${illustration.title}`}
       className="illustration-card"
       href={`/illustrations/${illustration.slug}`}
     >
