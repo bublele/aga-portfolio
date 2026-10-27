@@ -159,7 +159,7 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
 }
 .home-hero__copy > .eyebrow { margin-bottom: 2.25rem; }
-.home-hero__copy > .social-marks { margin-top: auto; margin-bottom: 56px; }
+.home-hero__copy > .social-marks { margin-block: 32px 56px; }
 .home-hero__actions { display: flex; flex-wrap: wrap; gap: 16px; }
 
 .home-hero h1 {
@@ -325,6 +325,7 @@ img { display: block; max-width: 100%; }
   content: "";
 }
 .work-block + .work-block { margin-top: 108px; }
+.work-block[id] { scroll-margin-top: 32px; }
 
 .work-block__label {
   display: flex;
@@ -496,7 +497,11 @@ img { display: block; max-width: 100%; }
   color: #0b0b0b;
   font-size: clamp(0.9rem, 1.6vw, 1.25rem);
   font-weight: 700;
+  transition: transform 180ms ease, background-color 180ms ease;
 }
+
+.email-chip:hover,
+.email-chip:focus-visible { background: #dfc7ba; transform: translateY(-3px); }
 
 .simple-nav,
 .case-nav {
