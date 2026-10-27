@@ -73,12 +73,12 @@ export default function HomePage() {
             </p>
             <SocialMarks />
             <div className="home-hero__actions">
-              <Link className="primary-button" href="#projekty">
+              <a className="primary-button" href="#case-studies">
                 My work
                 <svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="m9 4 8 8-8 8" />
                 </svg>
-              </Link>
+              </a>
               <a
                 className="primary-button primary-button--outline"
                 data-analytics-event="cv_download"
@@ -114,7 +114,7 @@ export default function HomePage() {
             <h2>{keepPolishWordsTogether("2. Ilustracje i inne")}</h2>
           </div>
 
-          <div className="work-block">
+          <div className="work-block" id="case-studies">
             <Link className="work-block__label work-block__link" href="/case-studies">
               <span>1. Logo design, branding - case study - wybrane</span>
             </Link>
