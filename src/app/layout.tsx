@@ -74,10 +74,10 @@ export const metadata: Metadata = {
     images: [siteConfig.defaultOgImage],
   },
   robots: {
-    index: isPublicSite,
+    index: false,
     follow: isPublicSite,
     googleBot: {
-      index: isPublicSite,
+      index: false,
       follow: isPublicSite,
       "max-image-preview": "large",
       "max-snippet": -1,

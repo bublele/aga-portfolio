@@ -1,13 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { ContactFooter } from "@/components/contact-footer";
-import { IllustrationCard } from "@/components/illustration-card";
 import { JsonLd } from "@/components/json-ld";
 import { ProjectCard } from "@/components/project-card";
 import { SocialMarks } from "@/components/social-marks";
 import { caseStudies } from "@/data/case-studies";
-import { illustrations } from "@/data/illustrations";
 import { media } from "@/data/media";
 import { absoluteUrl, siteConfig, socialLinks } from "@/lib/site";
 import { keepPolishWordsTogether } from "@/lib/typography";
@@ -108,32 +105,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="work-index page-shell" id="projekty">
-          <div className="work-index__headings">
-            <h2>1. Logo design, branding</h2>
-            <h2>{keepPolishWordsTogether("2. Ilustracje i inne")}</h2>
-          </div>
-
-          <div className="work-block" id="case-studies">
-            <Link className="work-block__label work-block__link" href="/case-studies">
-              <span>1. Logo design, branding - case study - wybrane</span>
-            </Link>
-            <div className="project-grid">
-              {caseStudies.map((project) => (
-                <ProjectCard key={project.slug} project={project} />
-              ))}
-            </div>
-          </div>
-
-          <div className="work-block work-block--illustrations">
-            <Link className="work-block__label work-block__link" href="/illustrations">
-              <span>{keepPolishWordsTogether("2. Ilustracje i inne")}</span>
-            </Link>
-            <div className="illustration-grid">
-              {illustrations.map((item) => (
-                <IllustrationCard illustration={item} key={item.slug} />
-              ))}
-            </div>
+        <section aria-label="Projekty" className="work-index page-shell" id="projekty">
+          <div className="project-grid" id="case-studies">
+            {caseStudies.map((project) => (
+              <ProjectCard headingLevel="h2" key={project.slug} project={project} />
+            ))}
           </div>
         </section>
       </main>
